@@ -2,7 +2,6 @@ package com.cutanddry.qa.synthetic_monitoring.driscoll_foods;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
-import com.cutanddry.qa.functions.Customer;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Login;
 import com.cutanddry.qa.functions.Orders;
@@ -28,7 +27,7 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToWhiteLabelPortal(DP);
+        Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
         softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
         softAssert.assertAll();

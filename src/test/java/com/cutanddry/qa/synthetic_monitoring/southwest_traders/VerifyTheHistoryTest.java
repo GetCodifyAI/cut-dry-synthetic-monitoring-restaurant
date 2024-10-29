@@ -1,4 +1,4 @@
-package com.cutanddry.qa.synthetic_monitoring.driscoll_foods;
+package com.cutanddry.qa.synthetic_monitoring.southwest_traders;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;

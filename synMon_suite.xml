@@ -7,5 +7,6 @@
     </listeners>
     <suite-files>
         <suite-file path="driscollSynMon.xml" />
+        <suite-file path="southwestSynMon.xml" />
     </suite-files>
 </suite>
