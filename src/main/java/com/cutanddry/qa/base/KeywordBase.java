@@ -1,8 +1,6 @@
 package com.cutanddry.qa.base;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,10 +11,10 @@ import org.slf4j.LoggerFactory;
 import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.*;
+import java.util.Date;
+import java.util.List;
 
 
 @SuppressWarnings("UnusedReturnValue")
@@ -55,11 +53,10 @@ public class KeywordBase {
         return this;
     }
 
-    // Send keys to an element using By object
-    public KeywordBase sendKeys(By by, String data) {
+    // Send keys to hidden element using By object
+    public KeywordBase sendKeysHiddenElements(By by, String data) {
         try {
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-            element.clear(); // Clear the field before typing
+            WebElement element = driver.findElement(by);
             element.sendKeys(data);
             logger.info("Sent keys to element: {} with data: {}", by, data);
         } catch (Exception e) {
@@ -68,37 +65,12 @@ public class KeywordBase {
         return this;
     }
 
-    public KeywordBase sendKeysToHiddenElements(By by, String data) {
+    public KeywordBase sendKeys(By by, String data) {
         try {
-            WebElement element =driver.findElement(by);
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            element.clear(); // Clear the field before typing
             element.sendKeys(data);
-            logger.info("Sent keys to hidden element: {} with data: {}", by, data);
-        } catch (Exception e) {
-            logger.error("Failed to send keys to element: {} with data: {}", by, data, e);
-        }
-        return this;
-    }
-    // Send keys to an element using the id
-    public KeywordBase sendKeysToField(String id_element, String data) {
-        try {
-            Actions actions = new Actions(driver);
-            WebElement element = driver.findElement(By.id(id_element));
-            actions.moveToElement(element).click().sendKeys(data).perform();
-            logger.info("Sent keys to field: {} with data: {}", id_element, data);
-        } catch (Exception e) {
-            logger.error("Failed to send keys to element: {} with data: {}", id_element, data, e);
-        }
-        return this;
-    }
-
-    // Send keys to an element using By object and press enter
-    public KeywordBase sendKeysAndEnter(By by, String data) {
-        try {
-            Actions actions = new Actions(driver);
-            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
-//            Thread.sleep(500);
-            actions.moveToElement(element).click().sendKeys(data).sendKeys(Keys.ENTER).perform();
-            logger.info("Sent keys to element: {} with data: {} and enter", by, data);
+            logger.info("Sent keys to element: {} with data: {}", by, data);
         } catch (Exception e) {
             logger.error("Failed to send keys to element: {} with data: {}", by, data, e);
         }
@@ -395,10 +367,9 @@ public class KeywordBase {
     // Drag and drop from one element to another
     public KeywordBase dragAndDrop(By sourceBy, By targetBy) {
         try {
-            Actions actions = new Actions(driver);
             WebElement sourceElement = wait.until(ExpectedConditions.visibilityOfElementLocated(sourceBy));
             WebElement targetElement = wait.until(ExpectedConditions.visibilityOfElementLocated(targetBy));
-            actions.dragAndDrop(sourceElement, targetElement).build().perform();
+            actions.dragAndDrop(sourceElement, targetElement).perform();
             logger.info("Dragged and dropped from element: {} to element: {}", sourceBy, targetBy);
         } catch (Exception e) {
             logger.error("Failed to drag and drop from element: {} to element: {}", sourceBy, targetBy, e);
@@ -523,112 +494,20 @@ public class KeywordBase {
             logger.error("Failed to take screenshot for test: " + testName, e);
         }
     }
+    public void switchToNewTab() {
+        String originalWindow = driver.getWindowHandle();
 
-    // Clear using JavaScript (useful when normal clear doesn't work)
-    public KeywordBase clearUsingJavaScript(By by) {
-        try {
-            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].value = '';", element);
-            logger.info("Clear using JavaScript on element: {}", by);
-        } catch (Exception e) {
-            logger.error("Failed to Clear using JavaScript on element: {}", by, e);
-        }
-        return this;
-    }
+        // Wait for the new tab to open (optional, depending on your application)
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(driver -> driver.getWindowHandles().size() > 1);
 
-    // Method to select a random option
-    public void selectRandomOptionFromDropDown(By optionsLocator) {
-        // Wait for the options to be present
-        wait.until(ExpectedConditions.visibilityOfElementLocated(optionsLocator));
-
-        // Locate the options within the dropdown
-        List<WebElement> options = driver.findElements(optionsLocator);
-        int totalOptions = options.size();
-
-        if (totalOptions > 0) {
-            // Generate a random index to select a random option
-            Random random = new Random();
-            int randomIndex = random.nextInt(totalOptions);
-
-            // Click on the randomly selected option
-            WebElement selectedOption = options.get(randomIndex);
-            selectedOption.click();
-        } else {
-            System.out.println("No options available to select.");
-        }
-    }
-
-    public boolean isDatesSorted(By by) {
-        List<WebElement> dateElements = driver.findElements(by);
-
-        List<Date> dates = new ArrayList<>();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-
-        // Retrieve text from all first column cells and parse to Date
-        for (WebElement element : dateElements) {
-            try {
-                Date date = dateFormat.parse(element.getText());
-                dates.add(date);
-            } catch (ParseException e) {
-                e.printStackTrace(); // Handle parsing error
-            }
-        }
-
-        // Create a copy of the list and sort it
-        List<Date> sortedList = new ArrayList<>(dates);
-        Collections.sort(sortedList);
-
-        // Check if the original list is equal to the sorted list
-        boolean isSorted = dates.equals(sortedList);
-
-        return isSorted;
-    }
-
-    public KeywordBase SwitchToNewTab(By by) {
-
-        // Store the current window handle
-        String originalTab = driver.getWindowHandle();
-
-        // Store the current set of window handles (before opening the new tab)
-        Set<String> existingWindows = driver.getWindowHandles();
-
-        // Click the element that opens the new tab
-        driver.findElement(by).click();
-
-        // Wait until the number of windows increases (indicating a new tab is opened)
-        wait.until(ExpectedConditions.numberOfWindowsToBe(existingWindows.size() + 1));
-
-        // Get the updated set of window handles after the new tab opens
-        Set<String> windowHandles = driver.getWindowHandles();
-
-        for (String windowHandle : windowHandles) {
-            if (!existingWindows.contains(windowHandle)) {
+        // Switch to the new tab
+        for (String windowHandle : driver.getWindowHandles()) {
+            if (!windowHandle.equals(originalWindow)) {
                 driver.switchTo().window(windowHandle);
-                logger.info("Switched to new tab: {}", windowHandle);
-                break; // Exit the loop once you've switched
+                break; // Exit loop once switched to new tab
             }
         }
-
-        return this;
-
     }
-
-    // Method to count the number of elements matching a given locator
-    public int countElements(By elementsLocator) {
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(elementsLocator));
-
-
-            List<WebElement> elements = driver.findElements(elementsLocator);
-
-
-            // Return the size of the list (i.e., the number of elements)
-            return elements.size();
-        } catch (TimeoutException e) {
-            // If no elements are visible within the timeout, return 0
-            return 0;
-        }
-    }
-
 
 }
+

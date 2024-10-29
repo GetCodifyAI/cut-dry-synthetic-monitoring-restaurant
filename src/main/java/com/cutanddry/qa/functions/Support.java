@@ -6,7 +6,10 @@ public class Support {
 
     static SupportPage supportPage = new SupportPage();
 
-    public static boolean isSupportCenterHeaderDisplayed(){
+    public static void goToSupportPage(){
+        supportPage.clickIcon();
+    }
+    public static boolean supportCenterHeader(){
         return supportPage.isSupportCenterHeaderDisplayed();
     }
 }

@@ -52,7 +52,7 @@ public class AioAPIHelper {
 
     public static String createCycle(String projectKey) {
         Map<String, Object> newCycleDetails = new HashMap<>();
-        newCycleDetails.put("title", "AUTOMATED_EXECUTION_DISTRIBUTOR_"+todayDate);
+        newCycleDetails.put("title", "AUTOMATED_EXECUTION_OPERATOR_"+todayDate);
 //        newCycleDetails.put("objective", "Trial Run");
 //        Map<String, String> folderDetails = Collections.singletonMap("ID","2");
 //        newCycleDetails.put("folder", folderDetails);
@@ -82,15 +82,8 @@ public class AioAPIHelper {
             doPost(MARK_CASE, runStatus, projectKey, cycleKey, caseKey, "false" );
         }
     }
-
-//    public static String addCase(String projectKey, String cycleKey, String caseKey ) {
-//        Response r =  doPost(ADD_CASE_TO_CYCLE, null, projectKey, cycleKey, caseKey );
-//        return r.jsonPath().get("ID").toString();
-//    }
-
     public static String addCase(String projectKey, String cycleKey, String caseKey) {
         Response r = doPost(ADD_CASE_TO_CYCLE, null, projectKey, cycleKey, caseKey);
-
         // Check if response is in JSON format and contains the expected data
         String responseBody = r.getBody().asString();
         try {
@@ -108,12 +101,35 @@ public class AioAPIHelper {
     }
 
 
-    public static Response doGet(String path, String ...pathParams) {
-        Response response = given(defaultRequestSpec).when().get(path,pathParams).andReturn();
-        response.prettyPrint();
+
+
+    public static Response doPost(String path, Map<String, Object> params, Object... pathParams) {
+        Response response = params != null ?
+                given(defaultRequestSpec).contentType(ContentType.JSON).body(params).when().post(path, pathParams).andReturn() :
+                given(defaultRequestSpec).contentType(ContentType.JSON).when().post(path, pathParams).andReturn();
+        // Log the response status code and content type
+        System.out.println("Response Status Code: " + response.statusCode());
+        System.out.println("Response Content Type: " + response.getContentType());
+        if (response.statusCode() == 200) {
+            System.out.println("Case posted successfully in : " + pathParams[0]);
+        } else {
+            System.err.println("Failed to post case. Status Code: " + response.statusCode());
+            response.prettyPrint();
+        }
         return response;
     }
 
+//    public static String addCase(String projectKey, String cycleKey, String caseKey ) {
+//        Response r =  doPost(ADD_CASE_TO_CYCLE, null, projectKey, cycleKey, caseKey );
+//        return r.jsonPath().get("ID").toString();
+//    }
+//
+//    public static Response doGet(String path, String ...pathParams) {
+//        Response response = given(defaultRequestSpec).when().get(path,pathParams).andReturn();
+//        response.prettyPrint();
+//        return response;
+//    }
+//
 //    public static Response doPost(String path, Map<String, Object> params, Object ...pathParams) {
 //        Response response = params != null?
 //                given(defaultRequestSpec).contentType(ContentType.JSON).body(params).when().post(path,pathParams).andReturn() :
@@ -125,24 +141,6 @@ public class AioAPIHelper {
 //        }
 //        return response;
 //    }
-
-    public static Response doPost(String path, Map<String, Object> params, Object... pathParams) {
-        Response response = params != null ?
-                given(defaultRequestSpec).contentType(ContentType.JSON).body(params).when().post(path, pathParams).andReturn() :
-                given(defaultRequestSpec).contentType(ContentType.JSON).when().post(path, pathParams).andReturn();
-
-        // Log the response status code and content type
-        System.out.println("Response Status Code: " + response.statusCode());
-        System.out.println("Response Content Type: " + response.getContentType());
-
-        if (response.statusCode() == 200) {
-            System.out.println("Case posted successfully in : " + pathParams[0]);
-        } else {
-            System.err.println("Failed to post case. Status Code: " + response.statusCode());
-            response.prettyPrint();
-        }
-        return response;
-    }
 
     public static Response doMultipartPost(String path, File file, Map<String, Object> formParams, Object ...pathParams) {
 

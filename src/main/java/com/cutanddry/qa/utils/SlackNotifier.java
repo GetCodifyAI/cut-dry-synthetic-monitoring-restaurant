@@ -10,12 +10,12 @@ import org.json.JSONObject;
 
 public class SlackNotifier {
     private static final String WEBHOOK_URL = Constants.SLACK_WEBHOOK;
-    // https://hooks.slack.com/services/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 //group - synthetic-mon-alerts
+    //https://hooks.slack.com/services/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
 
     // Update this with the actual URL where the report is hosted
     private static final String REPORT_URL = "https://app.circleci.com/pipelines/github/GetCodifyAI/cut-and-dry?branch=master";
 
-    public static void sendSlackAlert(int totalTests, int passedTests, int failedTests, String environment, List<String> passedTestCases, List<String> failedTestCases, String DP) {
+    public static void sendSlackAlert(int totalTests, int passedTests, int failedTests, String environment, List<String> passedTestCases, List<String> failedTestCases) {
         try {
             // Construct the JSON payload
             String payload = "{"
@@ -24,7 +24,7 @@ public class SlackNotifier {
                     + "\"type\": \"section\","
                     + "\"text\": {"
                     + "\"type\": \"mrkdwn\","
-                    + "\"text\": \"*" + DP + " - Synthetic Monitoring Test Suite Execution Completed!*\""
+                    + "\"text\": \"*Operator - Test Suite Execution Completed!*\""
                     + "}"
                     + "},"
                     + "{"
