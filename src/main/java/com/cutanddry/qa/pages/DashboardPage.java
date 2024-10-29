@@ -101,8 +101,9 @@ public class DashboardPage extends LoginPage{
         distributorUI.waitForVisibility(btn_users);
         distributorUI.click(btn_users);
     }
-    public void clickOnOrders(){
+    public void clickOnOrders() throws InterruptedException {
         distributorUI.click(btn_viewOrders);
+        distributorUI.waitForCustom(1000);
     }
     public void clickOnOrderDesk(){
         distributorUI.click(btn_orderDesk);

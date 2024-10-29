@@ -40,7 +40,7 @@ public class Dashboard {
     public static void navigateToUsersWhiteLabel() {
         dashboardPage.clickOnUsers();
     }
-    public static void navigateToOrders(){
+    public static void navigateToOrders() throws InterruptedException {
         dashboardPage.clickOnOrders();
     }
     public static void navigateToOrderDesk(){
