@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>
+        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>
+        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="driscollSynMon.xml" />
+        <suite-file path="southwestSynMon.xml" />
+<!--        <suite-file path="dicarloSynMon.xml" />-->
+<!--        <suite-file path="biriteSynMon.xml" />-->
+<!--        <suite-file path="wcwSynMon.xml" />-->
+<!--        <suite-file path="hillcrestSynMon.xml" />-->
+<!--        <suite-file path="maplevaleSynMon.xml" />-->
+    </suite-files>
+</suite>
