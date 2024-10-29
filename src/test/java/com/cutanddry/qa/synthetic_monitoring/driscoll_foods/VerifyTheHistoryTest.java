@@ -2,9 +2,10 @@ package com.cutanddry.qa.synthetic_monitoring.driscoll_foods;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
+import com.cutanddry.qa.functions.Chat;
 import com.cutanddry.qa.functions.Dashboard;
+import com.cutanddry.qa.functions.History;
 import com.cutanddry.qa.functions.Login;
-import com.cutanddry.qa.functions.Settings;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -12,9 +13,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class VerifyCompanySettingsTest extends TestBase {
+public class VerifyTheHistoryTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
+    static String DP = "176705437";
 
     @BeforeMethod
     public void setUp(){
@@ -23,14 +24,13 @@ public class VerifyCompanySettingsTest extends TestBase {
     }
 
     @Test
-    public void VerifyCompanySettings() throws InterruptedException {
+    public void VerifyTheHistory() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
-        softAssert.assertTrue(Dashboard.isUserNavigatedToDashboard(),"navigation error");
-        Dashboard.navigateToCompanySettings();
-        softAssert.assertTrue(Settings.isCompanySettingsTextDisplayed(),"navigation to company settings error");
+        Login.navigateToWhiteLabelPortal(DP);
+        Dashboard.navigateToHistory();
+        softAssert.assertTrue(History.isUserNavigatedToHistory(),"navigation error");
         softAssert.assertAll();
     }
 

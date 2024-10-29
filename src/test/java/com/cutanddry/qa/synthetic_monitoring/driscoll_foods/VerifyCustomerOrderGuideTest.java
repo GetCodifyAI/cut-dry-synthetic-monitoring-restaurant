@@ -32,6 +32,7 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
         Dashboard.navigateToOrders();
         softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
         softAssert.assertAll();
+
     }
 
     @AfterMethod

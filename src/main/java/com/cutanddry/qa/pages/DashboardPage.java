@@ -34,12 +34,12 @@ public class DashboardPage extends LoginPage{
     By btn_trackRoutes = By.xpath("//div[@arrowprops]//a[text()='Routes']");
     By btn_trackMonitoring = By.xpath("//div[@arrowprops]//a[text()='Monitoring']");
     By btn_trackNotifications = By.xpath("//div[@arrowprops]//a[text()='Notifications']");
-    By btn_pay  =By.xpath("//a[@data-tip='Payments']");
+    By btn_pay  =By.xpath("//a[@data-tip='View Invoices']");
     By btn_reports  =By.xpath("//a[@data-tip='Reports']");
-    By btn_trackSettings = By.xpath("//div[@arrowprops]//a[text()='Track']");
+    By btn_restaurantSettings = By.xpath("//div[@arrowprops]//a[text()='Restaurant']");
     By btn_profSettings = By.xpath("//div[@arrowprops]//a[text()='Profile']");
-    By btn_companySettings = By.xpath("//div[@arrowprops]//a[text()='Company']");
-    By btn_billingSettings = By.xpath("//div[@arrowprops]//a[text()='Billing']");
+    By btn_accountSettings = By.xpath("//div[@arrowprops]//a[text()='Account']");
+    By btn_locationSettings = By.xpath("//div[@arrowprops]//a[text()='Locations']");
     By btn_support = By.xpath("//a[@data-tip='Support']");
     By btn_tracker  =By.xpath("//a[@data-tip='Tracker']");
     By btn_endlAisle  =By.xpath("//a[@data-tip='Endless Aisle']");
@@ -101,8 +101,9 @@ public class DashboardPage extends LoginPage{
         distributorUI.waitForVisibility(btn_users);
         distributorUI.click(btn_users);
     }
-    public void clickOnOrders(){
+    public void clickOnOrders() throws InterruptedException {
         distributorUI.click(btn_viewOrders);
+        distributorUI.waitForCustom(1000);
     }
     public void clickOnOrderDesk(){
         distributorUI.click(btn_orderDesk);
@@ -197,23 +198,23 @@ public class DashboardPage extends LoginPage{
     public void clickOnReports(){
         distributorUI.click(btn_reports);
     }
-    public void clickOnBillingSettings(){
+    public void clickOnLocationSettings(){
         distributorUI.scrollToElement(btn_settings);
         distributorUI.clickUsingJavaScript(btn_settings);
-        distributorUI.hoverOverElement(btn_billingSettings);
-        distributorUI.click(btn_billingSettings);
+        distributorUI.hoverOverElement(btn_locationSettings);
+        distributorUI.click(btn_locationSettings);
     }
-    public void clickOnCompanySettings(){
+    public void clickOnAccountingSettings(){
         distributorUI.scrollToElement(btn_settings);
         distributorUI.clickUsingJavaScript(btn_settings);
-        distributorUI.hoverOverElement(btn_companySettings);
-        distributorUI.click(btn_companySettings);
+        distributorUI.hoverOverElement(btn_accountSettings);
+        distributorUI.click(btn_accountSettings);
     }
-    public void clickOnTrackSettings(){
+    public void clickOnRestaurantSettings(){
         distributorUI.scrollToElement(btn_settings);
         distributorUI.clickUsingJavaScript(btn_settings);
-        distributorUI.hoverOverElement(btn_trackSettings);
-        distributorUI.click(btn_trackSettings);
+        distributorUI.hoverOverElement(btn_restaurantSettings);
+        distributorUI.click(btn_restaurantSettings);
     }
     public void clickOnProfileSettings(){
         distributorUI.scrollToElement(btn_settings);

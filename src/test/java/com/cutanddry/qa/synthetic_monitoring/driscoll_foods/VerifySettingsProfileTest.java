@@ -12,9 +12,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class VerifyOrdersSettingsTest extends TestBase {
+public class VerifySettingsProfileTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
+    static String DP = "176705437";
 
     @BeforeMethod
     public void setUp(){
@@ -23,14 +23,13 @@ public class VerifyOrdersSettingsTest extends TestBase {
     }
 
     @Test
-    public void VerifyOrdersSettings() throws InterruptedException {
+    public void VerifyProfileSettings() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
-        softAssert.assertTrue(Dashboard.isUserNavigatedToDashboard(),"navigation error");
-        Dashboard.navigateToOrderSettings();
-        softAssert.assertTrue(Settings.isOrderSettingsTextDisplayed(),"navigation to order settings error");
+        Login.navigateToWhiteLabelPortal(DP);
+        Dashboard.navigateToProfileSettings();
+        softAssert.assertTrue(Settings.isProfileSettingsTextDisplayed(),"navigation to profile settings error");
         softAssert.assertAll();
     }
 

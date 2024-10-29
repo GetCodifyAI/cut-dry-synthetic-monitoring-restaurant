@@ -29,10 +29,10 @@ public class SettingsPage extends LoginPage{
     By txt_removePopup = By.xpath("//h2[text()='Are you sure you want to remove this user?']");
     By btn_Yes = By.xpath("//button[text()='Yes']");
     String txt_userField = "//td[text()='USER']";
-    By txt_companySettings = By.xpath("//h2[contains(text(),'Company Settings')]");
+    By txt_accSettings = By.xpath("//h2[contains(text(),'Accounting')]");
     By txt_profSettings = By.xpath("//h2[contains(text(),'Profile')]");
-    By txt_trackSettings = By.xpath("//h2[contains(text(),'Delivery Settings')]");
-    By txt_billingSettings = By.xpath("//h2[contains(text(),'Billing Settings')]");
+    By txt_restaurantSettings = By.xpath("//h2[contains(text(),'Company Settings')]");
+    By txt_locationSettings = By.xpath("//h2[contains(text(),'Location')]");
 
     public boolean isOrderSettingsTextDisplayed(){
         try {
@@ -187,24 +187,24 @@ public class SettingsPage extends LoginPage{
         distributorUI.waitForClickability(By.xpath(txt_userField.replace("USER", user)));
         distributorUI.click(By.xpath(txt_userField.replace("USER", user)));
     }
-    public boolean isCompanySettingsTextDisplayed() throws InterruptedException {
+    public boolean isAccSettingsTextDisplayed() throws InterruptedException {
         try {
-            distributorUI.waitForVisibility(txt_companySettings);
+            distributorUI.waitForVisibility(txt_accSettings);
         } catch (Exception e){
             return false;
         }
         distributorUI.waitForCustom(2000);
-        return distributorUI.isDisplayed(txt_companySettings);
+        return distributorUI.isDisplayed(txt_accSettings);
 
     }
-    public boolean isBillingSettingsTextDisplayed() throws InterruptedException {
+    public boolean isLocationSettingsTextDisplayed() throws InterruptedException {
         try {
-            distributorUI.waitForVisibility(txt_billingSettings);
+            distributorUI.waitForVisibility(txt_locationSettings);
         } catch (Exception e){
             return false;
         }
         distributorUI.waitForCustom(2000);
-        return distributorUI.isDisplayed(txt_billingSettings);
+        return distributorUI.isDisplayed(txt_locationSettings);
 
     }
     public boolean isProfileSettingsTextDisplayed() throws InterruptedException {
@@ -217,13 +217,13 @@ public class SettingsPage extends LoginPage{
         return distributorUI.isDisplayed(txt_profSettings);
 
     }
-    public boolean isTrackSettingsTextDisplayed() throws InterruptedException {
+    public boolean isRestaurantSettingsTextDisplayed() throws InterruptedException {
         try {
-            distributorUI.waitForVisibility(txt_trackSettings);
+            distributorUI.waitForVisibility(txt_restaurantSettings);
         } catch (Exception e){
             return false;
         }
         distributorUI.waitForCustom(2000);
-        return distributorUI.isDisplayed(txt_trackSettings);
+        return distributorUI.isDisplayed(txt_restaurantSettings);
     }
 }

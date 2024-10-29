@@ -5,6 +5,7 @@ import com.cutanddry.qa.data.models.User;
 import com.cutanddry.qa.functions.Customer;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Login;
+import com.cutanddry.qa.functions.Orders;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -14,9 +15,8 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerSearchTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
-    static String customerId = "682653";
-    static String itemCode = "684356";
+    static String DP = "176705437";
+    static String itemCode = "580213";
 
     @BeforeMethod
     public void setUp(){
@@ -29,13 +29,9 @@ public class VerifyCustomerSearchTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
-        Dashboard.navigateToCustomers();
-        softAssert.assertTrue(Customer.isNavigatedToCustomerPage(),"navigation error");
-        Customer.searchCustomerByCode(customerId);
-        softAssert.assertTrue(Customer.isCustomerSearchResultByCodeDisplayed(customerId),"search error");
-        Customer.clickOnOrderGuide(customerId);
-        softAssert.assertTrue(Customer.isNavigatedToOrderGuide(),"order guide navigation error");
+        Login.navigateToWhiteLabelPortal(DP);
+        Dashboard.navigateToOrders();
+        softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
         Customer.searchItemOnOrderGuide(itemCode);
         softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(itemCode),"item mismatch");
         softAssert.assertAll();

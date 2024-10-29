@@ -3,7 +3,7 @@ package com.cutanddry.qa.pages;
 import org.openqa.selenium.By;
 
 public class ChatPage extends LoginPage{
-    By txt_chat = By.xpath("//h2[contains(text(),'Chat')]");
+    By txt_chat = By.xpath("//input[@placeholder='Message...' and @type='text']");
     By tbx_searchCustomers = By.xpath("//input[@placeholder='Search Customers']");
     String customerName = "//div[text()='NAME']";
     By tbx_Message = By.xpath("//input[@placeholder='Message...']");

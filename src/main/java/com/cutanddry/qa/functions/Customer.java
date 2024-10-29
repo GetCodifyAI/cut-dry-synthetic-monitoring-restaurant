@@ -66,9 +66,9 @@ public class Customer {
         customersPage.clickOnCheckoutButton();
     }
     public static void goToCatalog() throws InterruptedException {
-        if (customersPage.isPreviousDraftOrderNoDisplayed()){
-            customersPage.clickPreviousDraftOrderNo();
-        }
+//        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+//            customersPage.clickPreviousDraftOrderNo();
+//        }
         customersPage.clickOnCatalogButton();
     }
     public static void searchItemOnCatalog(String item) throws InterruptedException {
@@ -193,9 +193,6 @@ public class Customer {
         customersPage.clickOnDownloadOrderGuide();
     }
     public static void searchItemOnOrderGuide(String item) throws InterruptedException {
-        if (customersPage.isPreviousDraftOrderNoDisplayed()){
-            customersPage.clickPreviousDraftOrderNo();
-        }
         customersPage.typeToSearchOnOrderGuide(item);
     }
     public static void goToCreatePopup() throws InterruptedException {

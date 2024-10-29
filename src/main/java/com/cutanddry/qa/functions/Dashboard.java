@@ -40,7 +40,7 @@ public class Dashboard {
     public static void navigateToUsersWhiteLabel() {
         dashboardPage.clickOnUsers();
     }
-    public static void navigateToOrders(){
+    public static void navigateToOrders() throws InterruptedException {
         dashboardPage.clickOnOrders();
     }
     public static void navigateToOrderDesk(){
@@ -91,14 +91,14 @@ public class Dashboard {
     public static void navigateToReports() {
         dashboardPage.clickOnReports();
     }
-    public static void navigateToCompanySettings() {
-        dashboardPage.clickOnCompanySettings();
+    public static void navigateToAccountingSettings() {
+        dashboardPage.clickOnAccountingSettings();
     }
-    public static void navigateToBillingSettings() {
-        dashboardPage.clickOnBillingSettings();
+    public static void navigateToLocationSettings() {
+        dashboardPage.clickOnLocationSettings();
     }
-    public static void navigateToTrackSettings() {
-        dashboardPage.clickOnTrackSettings();
+    public static void navigateToRestaurantSettings() {
+        dashboardPage.clickOnRestaurantSettings();
     }
     public static void navigateToProfileSettings() {
         dashboardPage.clickOnProfileSettings();
@@ -117,5 +117,8 @@ public class Dashboard {
     }
     public static void navigateToShowCasePage(){
         dashboardPage.clickOnShowCase();
+    }
+    public static void navigateToUsers(){
+        dashboardPage.clickOnUsers();
     }
 }

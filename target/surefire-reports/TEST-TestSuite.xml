@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="224.63" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="298.556" tests="12" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="surefire.suiteXmlFiles" value="regression.xml"/>
+    <property name="surefire.suiteXmlFiles" value="driscollSynMon.xml"/>
     <property name="java.specification.version" value="22"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/test-classes:/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/classes:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-java/4.23.0/selenium-java-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-api/4.23.0/selenium-api-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.23.0/selenium-chrome-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.23.0/selenium-chromium-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-json/4.23.0/selenium-json-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.23.0/selenium-manager-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.23.0/selenium-devtools-v125-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v126/4.23.0/selenium-devtools-v126-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.23.0/selenium-devtools-v127-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.23.0/selenium-devtools-v85-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.23.0/selenium-edge-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.23.0/selenium-firefox-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-http/4.23.0/selenium-http-4.23.0.jar:/Users/senuriranatunga/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.23.0/selenium-ie-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.23.0/selenium-remote-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/senuriranatunga/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/senuriranatunga/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/senuriranatunga/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/senuriranatunga/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api/1.40.0/opentelemetry-api-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-context/1.40.0/opentelemetry-context-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.40.0/opentelemetry-exporter-logging-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.40.0/opentelemetry-sdk-common-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.40.0/opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.40.0/opentelemetry-sdk-extension-autoconfigure-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.40.0-alpha/opentelemetry-api-incubator-1.40.0-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.40.0/opentelemetry-sdk-trace-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.40.0/opentelemetry-sdk-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.40.0/opentelemetry-sdk-metrics-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.40.0/opentelemetry-sdk-logs-1.40.0.jar:/Users/senuriranatunga/.m2/repository/net/bytebuddy/byte-buddy/1.14.18/byte-buddy-1.14.18.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-os/4.23.0/selenium-os-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.23.0/selenium-safari-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-support/4.23.0/selenium-support-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/senuriranatunga/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/senuriranatunga/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/senuriranatunga/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okhttp3/okhttp/5.0.0-alpha.14/okhttp-5.0.0-alpha.14.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okio/okio-jvm/3.9.0/okio-jvm-3.9.0.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/senuriranatunga/.m2/repository/org/json/json/20240303/json-20240303.jar:/Users/senuriranatunga/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/senuriranatunga/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/senuriranatunga/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/senuriranatunga/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="java.class.path" value="/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/test-classes:/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/classes:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-java/4.25.0/selenium-java-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-api/4.25.0/selenium-api-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.25.0/selenium-chrome-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.25.0/selenium-chromium-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-json/4.25.0/selenium-json-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.25.0/selenium-manager-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.25.0/selenium-devtools-v127-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.25.0/selenium-devtools-v128-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.25.0/selenium-devtools-v129-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.25.0/selenium-devtools-v85-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.25.0/selenium-edge-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.25.0/selenium-firefox-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-http/4.25.0/selenium-http-4.25.0.jar:/Users/senuriranatunga/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.25.0/selenium-ie-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.25.0/selenium-remote-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/senuriranatunga/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/senuriranatunga/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/senuriranatunga/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/senuriranatunga/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api/1.42.1/opentelemetry-api-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-context/1.42.1/opentelemetry-context-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.42.1/opentelemetry-exporter-logging-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.42.1/opentelemetry-sdk-common-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.42.1/opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.42.1/opentelemetry-sdk-extension-autoconfigure-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.42.1-alpha/opentelemetry-api-incubator-1.42.1-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.42.1/opentelemetry-sdk-trace-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.42.1/opentelemetry-sdk-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.42.1/opentelemetry-sdk-metrics-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.42.1/opentelemetry-sdk-logs-1.42.1.jar:/Users/senuriranatunga/.m2/repository/net/bytebuddy/byte-buddy/1.15.1/byte-buddy-1.15.1.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-os/4.25.0/selenium-os-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.25.0/selenium-safari-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-support/4.25.0/selenium-support-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/senuriranatunga/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/senuriranatunga/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/senuriranatunga/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okhttp3/okhttp/5.0.0-alpha.14/okhttp-5.0.0-alpha.14.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okio/okio-jvm/3.9.0/okio-jvm-3.9.0.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/senuriranatunga/.m2/repository/org/json/json/20240303/json-20240303.jar:/Users/senuriranatunga/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/senuriranatunga/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/senuriranatunga/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/senuriranatunga/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -14,10 +14,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/surefire/surefirebooter-20240926174349235_3.jar /Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/surefire 2024-09-26T17-43-49_189-jvmRun1 surefire-20240926174349235_1tmp surefire_0-20240926174349235_2tmp"/>
+    <property name="sun.java.command" value="/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/surefire/surefirebooter-20241029142254088_3.jar /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/surefire 2024-10-29T14-22-54_033-jvmRun1 surefire-20241029142254088_1tmp surefire_0-20241029142254088_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/test-classes:/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/classes:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-java/4.23.0/selenium-java-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-api/4.23.0/selenium-api-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.23.0/selenium-chrome-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.23.0/selenium-chromium-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-json/4.23.0/selenium-json-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.23.0/selenium-manager-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.23.0/selenium-devtools-v125-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v126/4.23.0/selenium-devtools-v126-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.23.0/selenium-devtools-v127-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.23.0/selenium-devtools-v85-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.23.0/selenium-edge-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.23.0/selenium-firefox-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-http/4.23.0/selenium-http-4.23.0.jar:/Users/senuriranatunga/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.23.0/selenium-ie-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.23.0/selenium-remote-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/senuriranatunga/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/senuriranatunga/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/senuriranatunga/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/senuriranatunga/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api/1.40.0/opentelemetry-api-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-context/1.40.0/opentelemetry-context-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.40.0/opentelemetry-exporter-logging-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.40.0/opentelemetry-sdk-common-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.40.0/opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.40.0/opentelemetry-sdk-extension-autoconfigure-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.40.0-alpha/opentelemetry-api-incubator-1.40.0-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.40.0/opentelemetry-sdk-trace-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.40.0/opentelemetry-sdk-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.40.0/opentelemetry-sdk-metrics-1.40.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.40.0/opentelemetry-sdk-logs-1.40.0.jar:/Users/senuriranatunga/.m2/repository/net/bytebuddy/byte-buddy/1.14.18/byte-buddy-1.14.18.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-os/4.23.0/selenium-os-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.23.0/selenium-safari-driver-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-support/4.23.0/selenium-support-4.23.0.jar:/Users/senuriranatunga/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/senuriranatunga/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/senuriranatunga/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/senuriranatunga/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okhttp3/okhttp/5.0.0-alpha.14/okhttp-5.0.0-alpha.14.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okio/okio-jvm/3.9.0/okio-jvm-3.9.0.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/senuriranatunga/.m2/repository/org/json/json/20240303/json-20240303.jar:/Users/senuriranatunga/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/senuriranatunga/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/senuriranatunga/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/senuriranatunga/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/test-classes:/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/classes:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-java/4.25.0/selenium-java-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-api/4.25.0/selenium-api-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.25.0/selenium-chrome-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.25.0/selenium-chromium-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-json/4.25.0/selenium-json-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.25.0/selenium-manager-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.25.0/selenium-devtools-v127-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.25.0/selenium-devtools-v128-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.25.0/selenium-devtools-v129-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.25.0/selenium-devtools-v85-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.25.0/selenium-edge-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.25.0/selenium-firefox-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-http/4.25.0/selenium-http-4.25.0.jar:/Users/senuriranatunga/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.25.0/selenium-ie-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.25.0/selenium-remote-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/senuriranatunga/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/senuriranatunga/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/senuriranatunga/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/senuriranatunga/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/senuriranatunga/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api/1.42.1/opentelemetry-api-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-context/1.42.1/opentelemetry-context-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.42.1/opentelemetry-exporter-logging-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.42.1/opentelemetry-sdk-common-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.42.1/opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.42.1/opentelemetry-sdk-extension-autoconfigure-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.42.1-alpha/opentelemetry-api-incubator-1.42.1-alpha.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.42.1/opentelemetry-sdk-trace-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.42.1/opentelemetry-sdk-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.42.1/opentelemetry-sdk-metrics-1.42.1.jar:/Users/senuriranatunga/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.42.1/opentelemetry-sdk-logs-1.42.1.jar:/Users/senuriranatunga/.m2/repository/net/bytebuddy/byte-buddy/1.15.1/byte-buddy-1.15.1.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-os/4.25.0/selenium-os-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.25.0/selenium-safari-driver-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/seleniumhq/selenium/selenium-support/4.25.0/selenium-support-4.25.0.jar:/Users/senuriranatunga/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/senuriranatunga/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/senuriranatunga/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/senuriranatunga/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/senuriranatunga/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/Users/senuriranatunga/.m2/repository/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okhttp3/okhttp/5.0.0-alpha.14/okhttp-5.0.0-alpha.14.jar:/Users/senuriranatunga/.m2/repository/com/squareup/okio/okio-jvm/3.9.0/okio-jvm-3.9.0.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar:/Users/senuriranatunga/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/senuriranatunga/.m2/repository/org/json/json/20240303/json-20240303.jar:/Users/senuriranatunga/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/senuriranatunga/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/senuriranatunga/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/senuriranatunga/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/senuriranatunga/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/senuriranatunga/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/senuriranatunga/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/senuriranatunga/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/senuriranatunga"/>
     <property name="user.language" value="en"/>
@@ -25,20 +25,20 @@
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant"/>
+    <property name="basedir" value="/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant/target/surefire/surefirebooter-20240926174349235_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/target/surefire/surefirebooter-20241029142254088_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="22.0.2"/>
     <property name="user.name" value="senuriranatunga"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="14.6.1"/>
+    <property name="os.version" value="15.0.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -47,7 +47,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/fv/5hy5g0kn5c7c57ffw18vvstm0000gn/T/"/>
     <property name="java.version" value="22.0.2"/>
-    <property name="user.dir" value="/Users/senuriranatunga/Workspace/cut-dry-ui-automation-restaurant"/>
+    <property name="user.dir" value="/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -61,369 +61,337 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="editProductQtyFrmCatalog" classname="com.cutanddry.qa.tests.OrderGuide.EditProductQtyFrmCatalogTest" time="95.794">
-    <system-out><![CDATA[Transforming annotation for test: editProductQtyFrmCatalog
-Transforming annotation for test: verifyCreatingOrdersWithCatalogItems
-Request method:	POST
-Request URI:	https://tcms.aiojiraapps.com/aio-tcms/api/v1/project/DOT/testcycle/DOT-CY-/testcase/DOT-TC-58
-Response Status Code: 404
-Response Content Type: text/plain
-For the selected project, No Cycle found with Key: DOT-CY-
-Request method:	POST
-Request URI:	https://tcms.aiojiraapps.com/aio-tcms/api/v1/project/DOT/testcycle/DOT-CY-/testcase/DOT-TC-58/testrun?createNewRun=false
-Response Status Code: 404
-Response Content Type: text/plain
-For the selected project, No Cycle found with Key: DOT-CY-
-]]></system-out>
-    <system-err><![CDATA[Sep 26, 2024 5:43:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 129
-Sep 26, 2024 5:44:04 PM com.cutanddry.qa.base.TestBase initialization
-INFO: WebDriver initialized and navigated to the URL: https://app-uat.staging.cutanddry.com/
-Failed to post case. Status Code: 404
-Unexpected response format. Response: For the selected project, No Cycle found with Key: DOT-CY-
+  <testcase name="VerifyCustomerOrderGuide" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyCustomerOrderGuideTest" time="18.565">
+    <system-err><![CDATA[Oct 29, 2024 2:22:54 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:22:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:22:59 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(text(), 'Independent Foods Co')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(text(), 'Hayes')]
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to check if element is displayed: By.xpath: //div[contains(text(), 'Test_Automation') and contains(@class, 'w-100')]
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(text(), 'Test_Automation') and contains(@class, 'w-100')] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63943/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 07bb333bdae223c14aef093b7e15f6ec
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.isDisplayed(KeywordBase.java:137)
-	at com.cutanddry.qa.pages.DashboardPage.isTestAutomationPopupDisplayed(DashboardPage.java:45)
-	at com.cutanddry.qa.functions.Dashboard.navigateToOrderGuide(Dashboard.java:19)
-	at com.cutanddry.qa.tests.OrderGuide.EditProductQtyFrmCatalogTest.editProductQtyFrmCatalog(EditProductQtyFrmCatalogTest.java:32)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to wait for element By.xpath: //div[contains(text(),'previous draft order')]/..//div[text()='No'] to be enabled.
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cutanddry.qa.base.KeywordBase$$Lambda/0x000003f801423ac8@28b0375f (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.waitForElementEnabledState(KeywordBase.java:174)
-	at com.cutanddry.qa.pages.CustomersPage.isPreviousDraftOrderNoDisplayed(CustomersPage.java:77)
-	at com.cutanddry.qa.functions.Dashboard.navigateToOrderGuide(Dashboard.java:22)
-	at com.cutanddry.qa.tests.OrderGuide.EditProductQtyFrmCatalogTest.editProductQtyFrmCatalog(EditProductQtyFrmCatalogTest.java:32)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'previous draft order')]/..//div[text()='No']"}
-  (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [07bb333bdae223c14aef093b7e15f6ec, findElement {value=//div[contains(text(),'previous draft order')]/..//div[text()='No'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63943/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 07bb333bdae223c14aef093b7e15f6ec
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at com.cutanddry.qa.base.KeywordBase.lambda$waitForElementEnabledState$0(KeywordBase.java:176)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 24 more
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to check if element is displayed: By.xpath: //div[contains(text(),'previous draft order')]/..//div[text()='No']
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(text(),'previous draft order')]/..//div[text()='No'] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63943/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 07bb333bdae223c14aef093b7e15f6ec
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.isDisplayed(KeywordBase.java:137)
-	at com.cutanddry.qa.pages.CustomersPage.isPreviousDraftOrderNoDisplayed(CustomersPage.java:79)
-	at com.cutanddry.qa.functions.Dashboard.navigateToOrderGuide(Dashboard.java:22)
-	at com.cutanddry.qa.tests.OrderGuide.EditProductQtyFrmCatalogTest.editProductQtyFrmCatalog(EditProductQtyFrmCatalogTest.java:32)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[text()='Catalog']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='All Items']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Search catalog...'] with data: Artichoke -24ct
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got text from element at index 0: By.xpath: //div[contains(text(), 'Artichoke')] - Text: Search Results for Artichoke -24ct
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for clickability of element: By.xpath: //button[text()='Add to Cart']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[text()='Add to Cart']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for element By.xpath: //button[@data-for='cartCheckoutButton'] to be enabled.
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'd-flex') and contains(@class, 'btn-primary')]/*[name()='svg' and contains(@data-icon, 'plus')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'd-flex') and contains(@class, 'btn-primary')]/*[name()='svg' and contains(@data-icon, 'plus')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got text from element: By.xpath: //button[@data-for='cartCheckoutButton'] - Text: $144.00
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got text from element: By.xpath: //div[4]/div/div[1]/div/span[contains(text(), '$')] - Text: $48.00
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'd-flex') and contains(@class, 'btn-primary')]/*[name()='svg' and @data-icon='minus']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'd-flex') and contains(@class, 'btn-primary')]/*[name()='svg' and @data-icon='minus']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'd-flex') and contains(@class, 'btn-primary')]/*[name()='svg' and @data-icon='minus']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got text from element: By.xpath: //button[@data-for='cartCheckoutButton'] - Text: $0.00
-Failed to post case. Status Code: 404
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=ZTYxZjMzNjJhNDk1N2RlNmY3MDJkNjE3NjhkYjQ0MjUzZTBlM2MyOTY1YzcwMWM0Y2MyYjdhMzY1ZDdhYjRjMjE3MzAxOTU1OTA6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=ZTYxZjMzNjJhNDk1N2RlNmY3MDJkNjE3NjhkYjQ0MjUzZTBlM2MyOTY1YzcwMWM0Y2MyYjdhMzY1ZDdhYjRjMjE3MzAxOTU1OTA6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[contains(text(),'Order')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(),'Order Guide')]
 ]]></system-err>
   </testcase>
-  <testcase name="verifyCreatingOrdersWithCatalogItems" classname="com.cutanddry.qa.tests.OrderGuide.VerifyCreatingOrdersWithCatalogItemsTest" time="106.147">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://tcms.aiojiraapps.com/aio-tcms/api/v1/project/DOT/testcycle/DOT-CY-/testcase/DOT-TC-66
-Response Status Code: 404
-Response Content Type: text/plain
-For the selected project, No Cycle found with Key: DOT-CY-
-Request method:	POST
-Request URI:	https://tcms.aiojiraapps.com/aio-tcms/api/v1/project/DOT/testcycle/DOT-CY-/testcase/DOT-TC-66/testrun?createNewRun=false
-Response Status Code: 404
-Response Content Type: text/plain
-For the selected project, No Cycle found with Key: DOT-CY-
-]]></system-out>
-    <system-err><![CDATA[Sep 26, 2024 5:45:40 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+  <testcase name="VerifyCustomerCatalog" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyCustomerCatalogTest" time="21.719">
+    <system-err><![CDATA[Oct 29, 2024 2:23:18 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
 INFO: All browsers are closed.
-Sep 26, 2024 5:45:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 129
-Sep 26, 2024 5:45:47 PM com.cutanddry.qa.base.TestBase initialization
-INFO: WebDriver initialized and navigated to the URL: https://app-uat.staging.cutanddry.com/
-Failed to post case. Status Code: 404
-Unexpected response format. Response: For the selected project, No Cycle found with Key: DOT-CY-
+Oct 29, 2024 2:23:18 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:23:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:23:22 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=YzQ2MjNlMTg3NWFmZDUzYjU4NDFhNWI2ZDcwZTBhYjMxNjU3MmRjZGVmNGY5NDk1Yjg1M2RlMWVlYmQwZjM1MDE3MzAxOTU2MTQ6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=YzQ2MjNlMTg3NWFmZDUzYjU4NDFhNWI2ZDcwZTBhYjMxNjU3MmRjZGVmNGY5NDk1Yjg1M2RlMWVlYmQwZjM1MDE3MzAxOTU2MTQ6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[contains(text(),'Order')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for clickability of element: By.xpath: //div[text()='Catalog']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[text()='Catalog']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='All Items']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='All Items']
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyCustomerEdit" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyCustomerEditTest" time="23.622">
+    <system-err><![CDATA[Oct 29, 2024 2:23:44 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:23:45 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:23:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:23:49 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
 [TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(text(), 'Independent Foods Co')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(text(), 'Hayes')]
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to check if element is displayed: By.xpath: //div[contains(text(), 'Test_Automation') and contains(@class, 'w-100')]
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(text(), 'Test_Automation') and contains(@class, 'w-100')] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64015}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64015/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b4ee2e6e9eb45ab2efbf6f8ac36fe61
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.isDisplayed(KeywordBase.java:137)
-	at com.cutanddry.qa.pages.DashboardPage.isTestAutomationPopupDisplayed(DashboardPage.java:45)
-	at com.cutanddry.qa.functions.Dashboard.navigateToOrderGuide(Dashboard.java:19)
-	at com.cutanddry.qa.tests.OrderGuide.VerifyCreatingOrdersWithCatalogItemsTest.verifyCreatingOrdersWithCatalogItems(VerifyCreatingOrdersWithCatalogItemsTest.java:33)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to wait for element By.xpath: //div[contains(text(),'previous draft order')]/..//div[text()='No'] to be enabled.
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cutanddry.qa.base.KeywordBase$$Lambda/0x000003f801423ac8@5f47636 (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.waitForElementEnabledState(KeywordBase.java:174)
-	at com.cutanddry.qa.pages.CustomersPage.isPreviousDraftOrderNoDisplayed(CustomersPage.java:77)
-	at com.cutanddry.qa.functions.Dashboard.navigateToOrderGuide(Dashboard.java:22)
-	at com.cutanddry.qa.tests.OrderGuide.VerifyCreatingOrdersWithCatalogItemsTest.verifyCreatingOrdersWithCatalogItems(VerifyCreatingOrdersWithCatalogItemsTest.java:33)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'previous draft order')]/..//div[text()='No']"}
-  (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b4ee2e6e9eb45ab2efbf6f8ac36fe61, findElement {value=//div[contains(text(),'previous draft order')]/..//div[text()='No'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64015}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64015/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b4ee2e6e9eb45ab2efbf6f8ac36fe61
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at com.cutanddry.qa.base.KeywordBase.lambda$waitForElementEnabledState$0(KeywordBase.java:176)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 24 more
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to check if element is displayed: By.xpath: //div[contains(text(),'previous draft order')]/..//div[text()='No']
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(text(),'previous draft order')]/..//div[text()='No'] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64015}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64015/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b4ee2e6e9eb45ab2efbf6f8ac36fe61
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.isDisplayed(KeywordBase.java:137)
-	at com.cutanddry.qa.pages.CustomersPage.isPreviousDraftOrderNoDisplayed(CustomersPage.java:79)
-	at com.cutanddry.qa.functions.Dashboard.navigateToOrderGuide(Dashboard.java:22)
-	at com.cutanddry.qa.tests.OrderGuide.VerifyCreatingOrdersWithCatalogItemsTest.verifyCreatingOrdersWithCatalogItems(VerifyCreatingOrdersWithCatalogItemsTest.java:33)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(), 'Order Guide')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for clickability of element: By.xpath: //button[contains(text(), 'Create')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[contains(text(), 'Create')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Enter Name'] with data: Test_Guide
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for clickability of element: By.xpath: //button[contains(text(), 'Submit')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[contains(text(), 'Submit')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for clickability of element: By.xpath: //div[contains(text(), 'Add from Catalog')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(text(), 'Add from Catalog')]
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Search catalog...'] with data: Broccolini 18 Ct
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //button[@data-tip='Add to Order Guide']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@data-tip='Add to Order Guide']
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[contains(text(), 'Close Editor')]
-[TestNG-tests-1] ERROR com.cutanddry.qa.base.KeywordBase - Failed to check if element is displayed: By.xpath: //div[contains(@class, 'text-center') and contains(text(), 'continue your previous draft order')]
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class, 'text-center') and contains(text(), 'continue your previous draft order')] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: /var/folders/fv/5hy5g0kn5c7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64015}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64015/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b4ee2e6e9eb45ab2efbf6f8ac36fe61
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.cutanddry.qa.base.KeywordBase.isDisplayed(KeywordBase.java:137)
-	at com.cutanddry.qa.pages.DashboardPage.isDraftOrderPopUpDisplayed(DashboardPage.java:57)
-	at com.cutanddry.qa.functions.Customer.closeEditor(Customer.java:151)
-	at com.cutanddry.qa.tests.OrderGuide.VerifyCreatingOrdersWithCatalogItemsTest.verifyCreatingOrdersWithCatalogItems(VerifyCreatingOrdersWithCatalogItemsTest.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got text from element: By.xpath: //td//span/div[@data-tip='View Product Details'] - Text: Broccolini 18 Ct
-Failed to post case. Status Code: 404
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=OTZkZDllNTcxZmUwYzEyZDliM2ViN2IyMDRiOGQxNmI5N2I2YzhjMjIwZDlmNmRiZGQ1YmIzMGI4MGNlMjQ3NjE3MzAxOTU2Mzg6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=OTZkZDllNTcxZmUwYzEyZDliM2ViN2IyMDRiOGQxNmI5N2I2YzhjMjIwZDlmNmRiZGQ1YmIzMGI4MGNlMjQ3NjE3MzAxOTU2Mzg6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[contains(text(),'Order')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for clickability of element: By.xpath: //button[contains(text(), 'Edit')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[contains(text(), 'Edit')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //span[contains(text(), 'Edit Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //span[contains(text(), 'Edit Order Guide')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyCustomerSearch" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyCustomerSearchTest" time="37.206">
+    <system-err><![CDATA[Oct 29, 2024 2:24:12 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:24:13 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:24:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:24:17 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=Y2RiY2NkZGM1NTcwMTE0YjY2Njg2ZDEzNWU3Mjk3NGI5ZjZiYzg2MjgwOTExMjE0MGVhMGI0MWU0NjdhMWRiNzE3MzAxOTU2Njg6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=Y2RiY2NkZGM1NTcwMTE0YjY2Njg2ZDEzNWU3Mjk3NGI5ZjZiYzg2MjgwOTExMjE0MGVhMGI0MWU0NjdhMWRiNzE3MzAxOTU2Njg6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[contains(text(),'Order')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(),'Order Guide')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Cleared element: By.xpath: //input[@placeholder='Search order guide...']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Search order guide...'] with data: 580213
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for element By.xpath: //tbody[@class='border-0'] to be enabled.
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got text from element: By.xpath: //tbody[@class='border-0'] - Text: BEVERAGE
+Water Purified
+1 | Pure Life
+POCONOAMSTWAYNE
+580213
+Case
+(09/04/24)
+$7.29
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyTheDrafts" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyTheDraftsTest" time="15.159">
+    <system-err><![CDATA[Oct 29, 2024 2:24:54 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:24:55 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:24:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:24:59 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=NmQ1M2U2ZDYzZjlhMjc4Y2JmYTgyZTYzMDg2ZWJmMjVkZTVjYzhiMmI3MGU2YTdlNGNhMDFjMDY3NzhiMzMxMzE3MzAxOTU3MTA6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=NmQ1M2U2ZDYzZjlhMjc4Y2JmYTgyZTYzMDg2ZWJmMjVkZTVjYzhiMmI3MGU2YTdlNGNhMDFjMDY3NzhiMzMxMzE3MzAxOTU3MTA6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[@data-tip='View Drafts']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //li[contains(text(),'Drafts')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //li[contains(text(),'Drafts')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyTheChat" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyTheChatTest" time="19.134">
+    <system-err><![CDATA[Oct 29, 2024 2:25:14 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:25:15 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:25:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:25:19 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=MGI4ODUzZDMwZTI5ODI2NDhlOWRiYmExMzBlY2NiZjg4ZWQ5NGNhNGM3NWFlZDFlZDNlMWVjNWRiNGQ3MThmZTE3MzAxOTU3MzM6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=MGI4ODUzZDMwZTI5ODI2NDhlOWRiYmExMzBlY2NiZjg4ZWQ5NGNhNGM3NWFlZDFlZDNlMWVjNWRiNGQ3MThmZTE3MzAxOTU3MzM6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[@data-tip='Chat']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //input[@placeholder='Message...' and @type='text']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //input[@placeholder='Message...' and @type='text']
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyProfileSettings" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsProfileTest" time="18.511">
+    <system-err><![CDATA[Oct 29, 2024 2:25:38 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:25:38 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:25:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:25:43 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=Zjc4NGNjYjY0ZjFmNjZlN2M5ZjY4NWQ4MDMzODYwOTgzYmI4Yjg2ZGMzMDE5OGE1NGI3YzgzNGVkZTNmNjMzZDE3MzAxOTU3NTU6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=Zjc4NGNjYjY0ZjFmNjZlN2M5ZjY4NWQ4MDMzODYwOTgzYmI4Yjg2ZGMzMDE5OGE1NGI3YzgzNGVkZTNmNjMzZDE3MzAxOTU3NTU6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Scrolled to element: By.xpath: //a[@role='button' and contains(text(), 'Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked using JavaScript on element: By.xpath: //a[@role='button' and contains(text(), 'Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Hovered over element: By.xpath: //div[@arrowprops]//a[text()='Profile']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[@arrowprops]//a[text()='Profile']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //h2[contains(text(),'Profile')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //h2[contains(text(),'Profile')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifySettingsRestaurant" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsRestaurantTest" time="20.187">
+    <system-err><![CDATA[Oct 29, 2024 2:26:02 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:26:02 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:26:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:26:07 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=YTFhNDY4ODU2ZmIzZTA2ZDA0NzBlYTc5NzIwZjhiNGJkZDAxNmUyYzFkNjRiYmI3ZjJiYmI5N2EwZjQ4ZDQwMTE3MzAxOTU3ODA6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=YTFhNDY4ODU2ZmIzZTA2ZDA0NzBlYTc5NzIwZjhiNGJkZDAxNmUyYzFkNjRiYmI3ZjJiYmI5N2EwZjQ4ZDQwMTE3MzAxOTU3ODA6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Scrolled to element: By.xpath: //a[@role='button' and contains(text(), 'Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked using JavaScript on element: By.xpath: //a[@role='button' and contains(text(), 'Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Hovered over element: By.xpath: //div[@arrowprops]//a[text()='Restaurant']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[@arrowprops]//a[text()='Restaurant']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //h2[contains(text(),'Company Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //h2[contains(text(),'Company Settings')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifySettingsLocation" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsLocationTest" time="16.189">
+    <system-err><![CDATA[Oct 29, 2024 2:26:27 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:26:27 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:26:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:26:32 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=ZmQ1MGJmN2Q1NjE1MGMxNmI2ZmM3NTNkOTZjODljZWI0ZjRhMjI2YTlmNDBkMzVkN2M5MDJiMmU4YmZjOGQzNTE3MzAxOTU4MDI6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=ZmQ1MGJmN2Q1NjE1MGMxNmI2ZmM3NTNkOTZjODljZWI0ZjRhMjI2YTlmNDBkMzVkN2M5MDJiMmU4YmZjOGQzNTE3MzAxOTU4MDI6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Scrolled to element: By.xpath: //a[@role='button' and contains(text(), 'Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked using JavaScript on element: By.xpath: //a[@role='button' and contains(text(), 'Settings')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Hovered over element: By.xpath: //div[@arrowprops]//a[text()='Locations']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[@arrowprops]//a[text()='Locations']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //h2[contains(text(),'Location')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //h2[contains(text(),'Location')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyThePaySection" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyThePaySectionTest" time="19.56">
+    <system-err><![CDATA[Oct 29, 2024 2:26:48 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:26:48 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:26:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:26:50 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=MWE0NzJjZTNlMDgzNWNjZDY2MzhlNjRjYjBlNDk2YmIyNTliNjdiNTg5YTNmNmZkOWQxN2I2MGRkYzYyZjI4MDE3MzAxOTU4MjQ6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=MWE0NzJjZTNlMDgzNWNjZDY2MzhlNjRjYjBlNDk2YmIyNTliNjdiNTg5YTNmNmZkOWQxN2I2MGRkYzYyZjI4MDE3MzAxOTU4MjQ6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[@data-tip='View Invoices']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //li[contains(text(),'Pay')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //li[contains(text(),'Pay')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //a[contains(text(), 'Outstanding')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[contains(text(), 'Outstanding')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(), 'Invoices ready to be paid will show up here')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //a[contains(text(), 'Paid')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[contains(text(), 'Paid')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(text(), 'Paid invoices will show up here.')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyTheHistory" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyTheHistoryTest" time="16.71">
+    <system-err><![CDATA[Oct 29, 2024 2:27:09 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:27:09 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:27:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:27:14 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=OWNmZjNhN2U2MzM0NTEzNmY3ZjYzN2Y2MjEwZDU2N2FmMzA5N2EzNWU3ZTE4NGMzMjJiZGYxNmY5NTkzY2QzYjE3MzAxOTU4NDY6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=OWNmZjNhN2U2MzM0NTEzNmY3ZjYzN2Y2MjEwZDU2N2FmMzA5N2EzNWU3ZTE4NGMzMjJiZGYxNmY5NTkzY2QzYjE3MzAxOTU4NDY6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[@data-tip='Order History']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //h2[contains(text(),'Order History')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //h2[contains(text(),'Order History')]
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyTheUsers" classname="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyTheUsersTest" time="15.109">
+    <system-err><![CDATA[Oct 29, 2024 2:27:30 PM com.cutanddry.qa.base.TestBase closeAllBrowsers
+INFO: All browsers are closed.
+Oct 29, 2024 2:27:33 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (129.0.6668.58) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (130.0.6723.70); currently, chromedriver 130.0.6723.69 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry
+Oct 29, 2024 2:27:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+Oct 29, 2024 2:27:37 PM com.cutanddry.qa.base.TestBase initialization
+INFO: WebDriver initialized and navigated to the URL: https://app.cutanddry.com/
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Email or mobile'] with data: 415-505-5531
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //input[@placeholder='Password'] with data: NovaN@123
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //button[@type='submit']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[text()='Place Order']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://internal.cutanddry.com/internaltools/loginas
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Sent keys to element: By.xpath: //div[text()='Select...']/following::input[@type='text'] with data: 176705437
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //div[contains(@class, 'css-1n7v3ny-option') and contains(text(), '176705437')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Got attribute 'href' value from element: By.xpath: //a[contains(text(), 'Login As')] - Value: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=OTk2OTg3MGMzZTg5ZWUwNDc4ZDA4OTg4M2IzOWY0MGVmYTk0ZGY3ZWY5YmIwNjE1NzE1NGYwNTNmYjQyNzFlZjE3MzAxOTU4Njc6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Navigated to URL: https://driscoll.cutanddry.com/loginas/user/176705437?access_token=OTk2OTg3MGMzZTg5ZWUwNDc4ZDA4OTg4M2IzOWY0MGVmYTk0ZGY3ZWY5YmIwNjE1NzE1NGYwNTNmYjQyNzFlZjE3MzAxOTU4Njc6MjA2MDM4MzUy
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //a[@data-tip='Team']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Clicked on element: By.xpath: //a[@data-tip='Team']
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Waited for visibility of element: By.xpath: //h2[contains(text(),'Team')]
+[TestNG-tests-1] INFO com.cutanddry.qa.base.KeywordBase - Element is displayed: By.xpath: //h2[contains(text(),'Team')]
 ]]></system-err>
   </testcase>
 </testsuite>
