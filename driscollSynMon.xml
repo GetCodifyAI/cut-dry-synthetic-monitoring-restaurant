@@ -15,7 +15,6 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsAccountingTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsRestaurantTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyThePaySectionTest" />

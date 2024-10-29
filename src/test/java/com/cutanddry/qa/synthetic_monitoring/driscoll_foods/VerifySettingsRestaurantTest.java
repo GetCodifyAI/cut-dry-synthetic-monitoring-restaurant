@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifySettingsRestaurantTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
+    static String DP = "176705437";
 
     @BeforeMethod
     public void setUp(){
@@ -23,14 +23,13 @@ public class VerifySettingsRestaurantTest extends TestBase {
     }
 
     @Test
-    public void VerifyCompanySettings() throws InterruptedException {
+    public void VerifySettingsRestaurant() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
-        softAssert.assertTrue(Dashboard.isUserNavigatedToDashboard(),"navigation error");
-        Dashboard.navigateToCompanySettings();
-        softAssert.assertTrue(Settings.isCompanySettingsTextDisplayed(),"navigation to company settings error");
+        Login.navigateToWhiteLabelPortal(DP);
+        Dashboard.navigateToRestaurantSettings();
+        softAssert.assertTrue(Settings.isRestaurantSettingsTextDisplayed(),"navigation to restaurant settings error");
         softAssert.assertAll();
     }
 
