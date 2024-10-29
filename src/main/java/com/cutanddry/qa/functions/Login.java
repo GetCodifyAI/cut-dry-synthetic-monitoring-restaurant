@@ -6,7 +6,7 @@ public class Login {
 
     static LoginPage loginPage = new LoginPage();
 
-    public static void loginAsRestaurant(String emailOrMobile, String password){
+    public static void loginAsDistributor(String emailOrMobile, String password){
         loginPage.typeEmailOrMobile(emailOrMobile);
         loginPage.typePassword(password);
         loginPage.clickSubmit();
@@ -31,32 +31,44 @@ public class Login {
     public static void clickTryAgain(){
         loginPage.clickTryAgain();
     }
-    public static void navigateToWhiteLabel() {
-        loginPage.navigateToWhiteLabel();
+    public static void logIntoRestaurant(String emailOrMobile, String password){
+        loginPage.navigateToRestaurant();
+        loginPage.typeEmailOrMobile(emailOrMobile);
+        loginPage.typePassword(password);
+        loginPage.clickSubmit();
     }
-    public static void navigateToLoginAs() {
-        loginPage.navigateToLoginAs();
+    public static void navigateToDistributor() {
+        loginPage.navigateToDistributor();
     }
-    public static void goToOperatorJoshuaClayton(String operator) throws InterruptedException {
-        loginPage.typeToSearchOnOperator(operator);
-        loginPage.clickOnJoshuaClayton();
-        loginPage.clickOnLoginAsClassic();
+    public static void navigateToWhiteLabelPortal(String name) {
+        loginPage.navigateToWhiteLabelPortal(name);
     }
-    public static void goToOperatorStephanieCollins(String operator) throws InterruptedException {
-        loginPage.typeToSearchOnOperator(operator);
-        loginPage.clickOnStephanieCollins();
-        loginPage.clickOnLoginAsWhiteLabel();
+    public static void navigateToSupplierPortalVendor(String id) {
+        loginPage.navigateToSupplierPortalVendor(id);
     }
-    public static void goToOperatorBermudaBiologicalStation(String operator) throws InterruptedException {
-        loginPage.typeToSearchOnOperator(operator);
-        loginPage.clickOnBermudaBiologicalStation();
-        loginPage.clickOnLoginAsWhiteLabel();
+    public static void setNode(){
+        loginPage.setNode();
     }
-
-    public static void goToDistributorSunriseFood(String distributor) throws InterruptedException {
-        loginPage.typeToSearchOnDistributor(distributor);
-        loginPage.clickOnSunriseFood();
-        loginPage.clickOnLoginAsSupplier();
+    public static void navigateToDistributorPortal(String name) {
+        loginPage.navigateToDistributorPortal(name);
     }
 
+    public static void navigateToInternalToolsPage(){
+        loginPage.ClickOnInternalTools();
+    }
+    public static void navigateToConfigSupplier(){
+        loginPage.navigateToConfigSupplier();
+    }
+    public static void navigateToDistributorPortalProd(String name) {
+        loginPage.navigateToDistributorPortalProd(name);
+    }
+    public static void logIntoRestaurantProd(String emailOrMobile, String password){
+//        loginPage.navigateToRestaurantProd();
+        loginPage.typeEmailOrMobile(emailOrMobile);
+        loginPage.typePassword(password);
+        loginPage.clickSubmit();
+    }
+    public static void clickLogout(){
+        loginPage.clickLogout();
+    }
 }

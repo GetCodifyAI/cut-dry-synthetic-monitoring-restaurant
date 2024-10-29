@@ -16,103 +16,109 @@ public class LoginPage extends TestBase {
     By txt_invalidEmailOrMobile = By.xpath("//div[text()='Error']");
     By btn_ok = By.xpath("//button[text()='Ok']");
     By btn_tryAgain = By.xpath("//button[text()='Try Again']");
-    By tbx_operatorSearch = By.xpath("//input[@id='react-select-5-input']");
-    By txt_joshuaClayton = By.xpath("//div[contains(text(), 'Jonathan Allen - 75761700')]");
-    By txt_stephanieCollins = By.xpath("//div[contains(text(), 'Stephanie Collins - 176617582')]");
-    By txt_bermudaBiologicalStation= By.xpath("//div[contains(text(), '(explorer) - Bermuda Biological Station - 196795960')]");
-    By btn_LoginAsClassic = By.xpath("//a[contains(text(), 'Login As (classic)')]");
-    By btn_LoginAsWhiteLabel = By.xpath("//a[contains(text(), 'Login As (white-label)')]");
-    By tbx_distributorSearch = By.xpath("//input[@id='react-select-2-input']");
-    By txt_sunriseFoods = By.xpath("//div[contains(text(), '195998346 - Cut+Dry Agent - Sunrise Food Service Inc')]");
-    By btn_LoginAsSupplier = By.xpath("//a[contains(text(), 'Login As (supplier)')]");
-
-
-
-
+    By lbl_loginAs = By.xpath("//div[text()='Select...']/following::input[@type='text']");
+    String txt_whitelblCustomer = "//div[contains(@class, 'css-1n7v3ny-option') and contains(text(), 'NAME')]";
+    By btn_loginAsWLApp = By.xpath("//a[contains(text(), 'Login As')]");
+    By lbl_verifiedVendor = By.xpath("//a[text()='verifiedvendor']");
+    String txt_verifiedVendor = "//a[contains(text(), 'ID')]";
+    By lbl_suuplierPortalVendorData = By.xpath("//a[contains(text(), 'Link') and ancestor::th[contains(., 'SupplierPortalVendorData')]]");
+    By txt_key = By.xpath("//input[@name='data_key']");
+    By txt_value = By.xpath("//input[@name='data_val']");
+    By btn_setData = By.xpath("//button[contains(text(), 'Set data')]");
+    By lbl_loginAsDist = By.xpath("//h5[text()='Distributor Portal Quick Links']/following-sibling::div//div[text()='Select User...']/following::input[@type='text'][1]");
+    String txt_distributor = "//div[contains(@class, 'themed_select__option') and contains(text(), 'NAME')]";
+    By btn_loginAsDis = By.xpath("//a[contains(text(), 'Login As (supplier)')]");
+    By InternalToolsBtn = By.xpath("//a[contains(text(),'Internal Tools') and contains(@class,'active nav-link')]");
+    By btn_logout = By.xpath("//a[text()='Logout']");
 
     public void typeEmailOrMobile(String emailOrMobile){
-        restaurantUI.sendKeys(txt_emailOrMobile,emailOrMobile);
+        distributorUI.sendKeys(txt_emailOrMobile,emailOrMobile);
     }
     public void typePassword(String password){
-        restaurantUI.sendKeys(txt_password,password);
+        distributorUI.sendKeys(txt_password,password);
     }
     public void clickSubmit(){
-        restaurantUI.click(btn_signIn);
+        distributorUI.click(btn_signIn);
     }
     public void clickForgotPassword(){
-        restaurantUI.click(btn_forgotPassword);
+        distributorUI.click(btn_forgotPassword);
     }
     public boolean isForgotPasswordPopupDisplayed(){
-        return restaurantUI.isDisplayed(txt_forgotPassword);
+        return distributorUI.isDisplayed(txt_forgotPassword);
     }
     public void enterEmailOrMobile(String emailOrMobile){
-        restaurantUI.sendKeys(txt_enterEmailOrMobile,emailOrMobile);
+        distributorUI.sendKeys(txt_enterEmailOrMobile,emailOrMobile);
     }
     public void clickRequestPassword() {
-        restaurantUI.waitForClickability(btn_requestPassword);
-        restaurantUI.click(btn_requestPassword);
+        distributorUI.waitForClickability(btn_requestPassword);
+        distributorUI.click(btn_requestPassword);
     }
     public boolean validEmailOrMobile() {
-        return restaurantUI.isDisplayed(txt_validEmailOrMobile);
+        return distributorUI.isDisplayed(txt_validEmailOrMobile);
     }
     public boolean invalidEmailOrMobile() {
-        return restaurantUI.isDisplayed(txt_invalidEmailOrMobile);
+        return distributorUI.isDisplayed(txt_invalidEmailOrMobile);
     }
     public void clickOk() {
-        restaurantUI.waitForVisibility(btn_ok);
-        restaurantUI.click(btn_ok);
+        distributorUI.waitForVisibility(btn_ok);
+        distributorUI.click(btn_ok);
     }
     public void clickTryAgain() {
-        restaurantUI.waitForVisibility(btn_tryAgain);
-        restaurantUI.click(btn_tryAgain);
+        distributorUI.waitForVisibility(btn_tryAgain);
+        distributorUI.click(btn_tryAgain);
     }
-    public void navigateToWhiteLabel() {
-        restaurantUI.navigateToURL(Constants.WHITELABEL_APP_URL);
+    public void navigateToRestaurant() {
+        distributorUI.navigateToURL(Constants.SEC_URL);
     }
-    public void navigateToLoginAs() {
-        restaurantUI.navigateToURL(Constants.LOGIN_AS_APP_URL);
+    public void navigateToDistributor() {
+        distributorUI.navigateToURL(Constants.MAIN_URL);
     }
-
-    public void typeToSearchOnOperator(String operator) throws InterruptedException {
-        restaurantUI.sendKeys(tbx_operatorSearch, operator);
-        restaurantUI.waitForCustom(4000);
+    public void navigateToWhiteLabelPortal(String name) {
+        distributorUI.navigateToURL(Constants.PROD_LOGIN_AS);
+        distributorUI.sendKeys(lbl_loginAs,name);
+        distributorUI.isDisplayed(By.xpath(txt_whitelblCustomer.replace("NAME", name)));
+        distributorUI.click(By.xpath(txt_whitelblCustomer.replace("NAME", name)));
+        distributorUI.navigateToURL(distributorUI.getText(btn_loginAsWLApp, "href"));
     }
-    public void clickOnJoshuaClayton(){
-        restaurantUI.click(txt_joshuaClayton);
+    public void navigateToSupplierPortalVendor(String id) {
+        distributorUI.navigateToURL(Constants.NODE_EXPLORER);
+        distributorUI.navigateToURL(distributorUI.getText(lbl_verifiedVendor, "href"));
+        distributorUI.navigateToURL(distributorUI.getText(By.xpath(txt_verifiedVendor.replace("ID", id)), "href"));
+        distributorUI.navigateToURL(distributorUI.getText(lbl_suuplierPortalVendorData, "href"));
     }
-
-    public void clickOnStephanieCollins(){
-        restaurantUI.click(txt_stephanieCollins);
+    public void setNode() {
+        distributorUI.sendKeys(txt_key,"allowUpdateSalesPeopleMapData");
+        distributorUI.sendKeys(txt_value, String.valueOf(true));
+        distributorUI.click(btn_setData);
     }
-
-    public void clickOnLoginAsClassic() throws InterruptedException {
-        restaurantUI.click(btn_LoginAsClassic);
-//        restaurantUI.closeBrowser();
-//        restaurantUI.waitForCustom(4000);
-    }
-
-    public void clickOnLoginAsWhiteLabel() throws InterruptedException {
-        restaurantUI.click(btn_LoginAsWhiteLabel);
-//        restaurantUI.closeBrowser();
-//        restaurantUI.waitForCustom(4000);
-    }
-    public void clickOnBermudaBiologicalStation(){
-        restaurantUI.click(txt_bermudaBiologicalStation);
+    public void navigateToDistributorPortal(String name) {
+        distributorUI.navigateToURL(Constants.PROD_LOGIN_AS);
+        distributorUI.waitForElementEnabledState(lbl_loginAsDist,true);
+        distributorUI.sendKeys(lbl_loginAsDist,name);
+        distributorUI.click(By.xpath(txt_distributor.replace("NAME", name)));
+        distributorUI.navigateToURL(distributorUI.getText(btn_loginAsDis, "href"));
     }
 
-    public void typeToSearchOnDistributor(String operator) throws InterruptedException {
-        restaurantUI.click(tbx_distributorSearch);
-        restaurantUI.sendKeys(tbx_distributorSearch, operator);
-        restaurantUI.waitForCustom(4000);
+    public void ClickOnInternalTools(){
+        distributorUI.navigateToURL(Constants.PROD_LOGIN_AS);
+        distributorUI.waitForElementEnabledState(lbl_loginAsDist,true);
+        distributorUI.click(InternalToolsBtn);
     }
-
-    public void clickOnSunriseFood(){
-        restaurantUI.click(txt_sunriseFoods);
+    public void navigateToConfigSupplier() {
+        distributorUI.navigateToURL(Constants.CONFIG_SUPPLIER);
     }
-
-    public void clickOnLoginAsSupplier() throws InterruptedException {
-        restaurantUI.click(btn_LoginAsSupplier);
-//        restaurantUI.closeBrowser();
-//        restaurantUI.waitForCustom(4000);
+    public void navigateToRestaurantProd() {
+        distributorUI.navigateToURL(Constants.SEC_URL);
+    }
+    public void navigateToDistributorPortalProd(String name) {
+        distributorUI.navigateToURL(Constants.PROD_LOGIN_AS);
+        distributorUI.waitForElementEnabledState(lbl_loginAsDist,true);
+        distributorUI.sendKeys(lbl_loginAsDist,name);
+        distributorUI.click(By.xpath(txt_distributor.replace("NAME", name)));
+        distributorUI.navigateToURL(distributorUI.getText(btn_loginAsDis, "href"));
+    }
+    public void clickLogout(){
+        distributorUI.waitForVisibility(btn_logout);
+        distributorUI.navigateToURL(distributorUI.getText(btn_logout, "href"));
     }
 }

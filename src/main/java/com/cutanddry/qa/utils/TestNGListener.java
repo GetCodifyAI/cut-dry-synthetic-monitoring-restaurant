@@ -12,8 +12,9 @@ public class TestNGListener implements ITestListener {
     private int totalTests = 0;
     private int passedTests = 0;
     private int failedTests = 0;
-    private final List<String> passedTestCases = new ArrayList<>();
-    private final List<String> failedTestCases = new ArrayList<>();
+    private List<String> passedTestCases = new ArrayList<>();
+    private List<String> failedTestCases = new ArrayList<>();
+    private String DP;
 
     @Override
     public void onTestStart(ITestResult result) {
@@ -35,7 +36,12 @@ public class TestNGListener implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
 //        String environment = System.getProperty("test.env", "uat");
-        SlackNotifier.sendSlackAlert(totalTests, passedTests, failedTests, TEST_ENV, passedTestCases, failedTestCases);
+        SlackNotifier.sendSlackAlert(totalTests, passedTests, failedTests, TEST_ENV, passedTestCases, failedTestCases, DP);
+        totalTests = 0;
+        passedTests = 0;
+        failedTests = 0;
+        passedTestCases = new ArrayList<>();
+        failedTestCases = new ArrayList<>();
     }
 
     // Implement other ITestListener methods if needed
@@ -51,6 +57,7 @@ public class TestNGListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        // Optional: execute code when test suite starts
+        // Retrieve the DP Name from the test parameters
+        DP = context.getCurrentXmlTest().getParameter("DP");
     }
 }
