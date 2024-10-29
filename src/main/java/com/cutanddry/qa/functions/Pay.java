@@ -8,25 +8,18 @@ public class Pay {
     public static boolean isUserNavigatedToPay(){
         return payPage.isPayTextDisplayed();
     }
-    public static void clickOnInvoices(){
-        payPage.clickOnInvoices();
+    public static void clickOnOutstanding(){
+        payPage.clickOnOutstanding();
     }
-    public static void clickOnPaymentsInit(){
-        payPage.clickOnPaymentsInit();
+    public static void clickOnPaid(){
+        payPage.clickOnPaid();
     }
-    public static void clickOnPayouts(){
-        payPage.clickOnPayouts();
+
+    public static boolean isOutstandingBtnSelected(){
+        return payPage.isOutstandingBtnSelected();
     }
-    public static boolean isCustomerBtnSelected(){
-        return payPage.isCustomerBtnSelected();
+    public static boolean isPaidBtnSelected(){
+        return payPage.isPaidBtnSelected();
     }
-    public static boolean isInvoicesBtnSelected(){
-        return payPage.isInvoicesBtnSelected();
-    }
-    public static boolean isPaymentsInitBtnSelected(){
-        return payPage.isPaymentsInitBtnSelected();
-    }
-    public static boolean isPayoutBtnSelected(){
-        return payPage.isPayoutBtnSelected();
-    }
+
 }

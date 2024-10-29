@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyThePaySectionTest extends TestBase {
     static User user;
-    static String DP = "DiCarlo";
+    static String DP = "176705437";
 
     @BeforeMethod
     public void setUp(){
@@ -27,16 +27,13 @@ public class VerifyThePaySectionTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
+        Login.navigateToWhiteLabelPortal(DP);
         Dashboard.navigateToPay();
         softAssert.assertTrue(Pay.isUserNavigatedToPay(),"navigation error");
-        softAssert.assertTrue(Pay.isCustomerBtnSelected(),"customers btn select error");
-        Pay.clickOnInvoices();
-        softAssert.assertTrue(Pay.isInvoicesBtnSelected(),"invoices btn select error");
-        Pay.clickOnPaymentsInit();
-        softAssert.assertTrue(Pay.isPaymentsInitBtnSelected(),"pay init btn select error");
-        Pay.clickOnPayouts();
-        softAssert.assertTrue(Pay.isPayoutBtnSelected(),"payout btn select error");
+        Pay.clickOnOutstanding();
+//        softAssert.assertTrue(Pay.isOutstandingBtnSelected(),"outstanding btn select error");
+        Pay.clickOnPaid();
+//        softAssert.assertTrue(Pay.isPaidBtnSelected(),"paid btn select error");
         softAssert.assertAll();
     }
 

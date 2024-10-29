@@ -2,10 +2,7 @@ package com.cutanddry.qa.synthetic_monitoring.driscoll_foods;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
-import com.cutanddry.qa.functions.Chat;
-import com.cutanddry.qa.functions.Dashboard;
-import com.cutanddry.qa.functions.Draft;
-import com.cutanddry.qa.functions.Login;
+import com.cutanddry.qa.functions.*;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyTheChatTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
+    static String DP = "176705437";
 
     @BeforeMethod
     public void setUp(){
@@ -28,7 +25,7 @@ public class VerifyTheChatTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
+        Login.navigateToWhiteLabelPortal(DP);
         Dashboard.navigateToChat();
         softAssert.assertTrue(Chat.isUserNavigatedToChat(),"navigation error");
         softAssert.assertAll();
