@@ -118,4 +118,7 @@ public class Dashboard {
     public static void navigateToShowCasePage(){
         dashboardPage.clickOnShowCase();
     }
+    public static void navigateToUsers(){
+        dashboardPage.clickOnUsers();
+    }
 }

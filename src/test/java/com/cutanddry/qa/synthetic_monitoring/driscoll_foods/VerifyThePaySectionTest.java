@@ -31,9 +31,9 @@ public class VerifyThePaySectionTest extends TestBase {
         Dashboard.navigateToPay();
         softAssert.assertTrue(Pay.isUserNavigatedToPay(),"navigation error");
         Pay.clickOnOutstanding();
-//        softAssert.assertTrue(Pay.isOutstandingBtnSelected(),"outstanding btn select error");
+        softAssert.assertTrue(Pay.isOutstandingBtnSelected(),"outstanding btn select error");
         Pay.clickOnPaid();
-//        softAssert.assertTrue(Pay.isPaidBtnSelected(),"paid btn select error");
+        softAssert.assertTrue(Pay.isPaidBtnSelected(),"paid btn select error");
         softAssert.assertAll();
     }
 

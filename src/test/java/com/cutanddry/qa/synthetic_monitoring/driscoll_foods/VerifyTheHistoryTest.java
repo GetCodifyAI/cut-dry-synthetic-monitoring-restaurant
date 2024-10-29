@@ -4,6 +4,7 @@ import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
 import com.cutanddry.qa.functions.Chat;
 import com.cutanddry.qa.functions.Dashboard;
+import com.cutanddry.qa.functions.History;
 import com.cutanddry.qa.functions.Login;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
@@ -14,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyTheHistoryTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
+    static String DP = "176705437";
 
     @BeforeMethod
     public void setUp(){
@@ -23,13 +24,13 @@ public class VerifyTheHistoryTest extends TestBase {
     }
 
     @Test
-    public void VerifyTheChat() throws InterruptedException {
+    public void VerifyTheHistory() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToDistributorPortalProd(DP);
-        Dashboard.navigateToChat();
-        softAssert.assertTrue(Chat.isUserNavigatedToChat(),"navigation error");
+        Login.navigateToWhiteLabelPortal(DP);
+        Dashboard.navigateToHistory();
+        softAssert.assertTrue(History.isUserNavigatedToHistory(),"navigation error");
         softAssert.assertAll();
     }
 
