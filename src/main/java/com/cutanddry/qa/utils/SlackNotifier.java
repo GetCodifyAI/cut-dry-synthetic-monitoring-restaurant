@@ -24,7 +24,7 @@ public class SlackNotifier {
                     + "\"type\": \"section\","
                     + "\"text\": {"
                     + "\"type\": \"mrkdwn\","
-                    + "\"text\": \"*" + DP + " - Synthetic Monitoring Test Suite Execution Completed!*\""
+                    + "\"text\": \"*" + DP + " - Synthetic Monitoring Restaurant Test Suite Execution Completed!*\""
                     + "}"
                     + "},"
                     + "{"

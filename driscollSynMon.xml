@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Driscoll Foods" />
+        <parameter name="DP" value="Driscoll Foods (Pollard) Emily Murphy- 176705437-Owner-Pollard WL" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.VerifyCustomerCatalogTest" />
