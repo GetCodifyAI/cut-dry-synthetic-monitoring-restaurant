@@ -3,7 +3,6 @@ package com.cutanddry.qa.synthetic_monitoring.driscoll_foods;
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
 import com.cutanddry.qa.functions.Dashboard;
-import com.cutanddry.qa.functions.Draft;
 import com.cutanddry.qa.functions.Login;
 import com.cutanddry.qa.functions.Pay;
 import com.cutanddry.qa.utils.JsonUtil;
@@ -15,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyThePaySectionTest extends TestBase {
     static User user;
-    static String DP = "Driscoll Foods";
+    static String DP = "DiCarlo";
 
     @BeforeMethod
     public void setUp(){
