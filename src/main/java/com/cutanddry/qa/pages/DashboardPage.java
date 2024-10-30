@@ -6,7 +6,7 @@ public class DashboardPage extends LoginPage{
     By txt_dashboard = By.xpath("//li[contains(text(),'Dashboard')]");
     By btn_customers = By.xpath("//a[@data-tip='Customers']");
     By btn_boost = By.xpath("//a[@data-tip='Boost']");
-    By btn_chat = By.xpath("//a[@data-tip='Chat']");
+    By btn_chat = By.xpath("//a[contains(translate(@data-tip, 'CHAT', 'chat'), 'chat')]");
     By txt_dashboard_restaurant = By.xpath("//div[text()='Place Order']");
     By btn_restaurant_chat = By.xpath("//div[contains(text(),'Chat')]");
     By btn_catalog = By.xpath("//a[@data-tip='View Catalog']");

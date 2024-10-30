@@ -14,7 +14,8 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyTheChatTest extends TestBase {
     static User user;
-    static String DP = "176705437";
+    static String DP = "30785489";
+    static String DPName= "Southwest Traders";
 
     @BeforeMethod
     public void setUp(){
@@ -29,6 +30,7 @@ public class VerifyTheChatTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToChat();
+        Chat.clickOnCustomerChat(DPName);
         softAssert.assertTrue(Chat.isUserNavigatedToChat(),"navigation error");
         softAssert.assertAll();
     }
