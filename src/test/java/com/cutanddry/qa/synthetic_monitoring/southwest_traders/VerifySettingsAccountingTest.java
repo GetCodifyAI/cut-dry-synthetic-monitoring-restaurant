@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class VerifySettingsLocationTest extends TestBase {
+public class VerifySettingsAccountingTest extends TestBase {
     static User user;
     static String DP = "30785489";
 
@@ -28,8 +28,8 @@ public class VerifySettingsLocationTest extends TestBase {
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
-        Dashboard.navigateToLocationSettings();
-        softAssert.assertTrue(Settings.isLocationSettingsTextDisplayed(),"navigation to location settings error");
+        Dashboard.navigateToAccountingSettings();
+        softAssert.assertTrue(Settings.isAccountingSettingsTextDisplayed(),"navigation to accounting settings error");
         softAssert.assertAll();
     }
 
