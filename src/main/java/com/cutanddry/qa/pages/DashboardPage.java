@@ -45,6 +45,9 @@ public class DashboardPage extends LoginPage{
     By btn_endlAisle  =By.xpath("//a[@data-tip='Endless Aisle']");
     By btn_creditReq  =By.xpath("//a[@data-tip='Credit Requests']");
     By btn_showcase = By.xpath("//a[contains(@data-tip,'Cut+Dry Product Showcase')]");
+    By btn_rewards  =By.xpath("//a[@data-tip='Rewards']");
+    By btn_approvals  =By.xpath("//a[@data-tip='Approvals']");
+    By btn_suppliers  =By.xpath("//a[@data-tip='View Suppliers']");
 
     public boolean isDashboardTextDisplayed(){
         try {
@@ -237,5 +240,14 @@ public class DashboardPage extends LoginPage{
     }
     public void clickOnShowCase(){
         distributorUI.click(btn_showcase);
+    }
+    public void clickOnRewards(){
+        distributorUI.click(btn_rewards);
+    }
+    public void clickOnSuppliers(){
+        distributorUI.click(btn_suppliers);
+    }
+    public void clickOnApprovals(){
+        distributorUI.click(btn_approvals);
     }
 }
