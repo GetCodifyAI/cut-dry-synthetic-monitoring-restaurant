@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Southwest Traders (1st Treat Yogurt) Tanya Olsen- 30785489 -Owner - 1st Treat Yogurt Classic" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifySettingsAccountingTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheReportsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheSuppliersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheSupportTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheRewardsTest" />
+        </classes>
+    </test>
+</suite>
