@@ -26,11 +26,13 @@ com/cutanddry/qa/pages/EndAislePage.class
 com/cutanddry/qa/pages/InternalToolsPage.class
 com/cutanddry/qa/utils/RetryAnalyzer.class
 com/cutanddry/qa/pages/BoostPage.class
+com/cutanddry/qa/pages/RewardsPage.class
 com/cutanddry/qa/utils/aio/core/rest/AioAPIHelper.class
 com/cutanddry/qa/common/Constants.class
 com/cutanddry/qa/data/models/api/responses/LoginResponse$DataContainer.class
 com/cutanddry/qa/utils/api/core/graphql/ResponseUtil.class
 com/cutanddry/qa/utils/AIOSampleUIMethodListener.class
+com/cutanddry/qa/pages/SuppliersPage.class
 com/cutanddry/qa/pages/CashAndCarryAppPage.class
 com/cutanddry/qa/functions/Chat.class
 com/cutanddry/qa/functions/Track.class
@@ -59,10 +61,12 @@ com/cutanddry/qa/functions/EndAisle.class
 com/cutanddry/qa/pages/ShowCasePage.class
 com/cutanddry/qa/functions/Draft.class
 com/cutanddry/qa/utils/RetryTransformer.class
+com/cutanddry/qa/functions/Rewards.class
 com/cutanddry/qa/functions/Support.class
 com/cutanddry/qa/functions/CashAndCarry.class
 com/cutanddry/qa/functions/Users.class
 com/cutanddry/qa/functions/OrderDesk.class
+com/cutanddry/qa/functions/Suppliers.class
 com/cutanddry/qa/utils/AIOUtil.class
 com/cutanddry/qa/pages/CustomersPage.class
 com/cutanddry/qa/data/models/User.class
