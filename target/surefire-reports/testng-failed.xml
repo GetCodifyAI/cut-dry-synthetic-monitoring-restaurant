@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [bvt suit]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="tests" name="synthetic monitoring tests(failed)" verbose="0">
+    <parameter name="DP" value="Birite(1 Hotel San Francisco) Chef Scott koranda- 155947343 -Owner -1 Hotel San Francisco Classic"/>
+    <classes>
+      <class name="com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheChatTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="VerifyTheChat"/>
+        </methods>
+      </class> <!-- com.cutanddry.qa.synthetic_monitoring.birite.VerifyTheChatTest -->
+    </classes>
+  </test> <!-- synthetic monitoring tests(failed) -->
+</suite> <!-- Failed suite [bvt suit] -->
