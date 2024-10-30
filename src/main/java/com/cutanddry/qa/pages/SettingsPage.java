@@ -29,7 +29,7 @@ public class SettingsPage extends LoginPage{
     By txt_removePopup = By.xpath("//h2[text()='Are you sure you want to remove this user?']");
     By btn_Yes = By.xpath("//button[text()='Yes']");
     String txt_userField = "//td[text()='USER']";
-    By txt_accSettings = By.xpath("//h2[contains(text(),'Accounting')]");
+    By txt_accSettings = By.xpath("//h5[contains(text(),'Accounting')]");
     By txt_profSettings = By.xpath("//h2[contains(text(),'Profile')]");
     By txt_restaurantSettings = By.xpath("//h2[contains(text(),'Company Settings')]");
     By txt_locationSettings = By.xpath("//h2[contains(text(),'Location')]");

@@ -5,7 +5,6 @@ import com.cutanddry.qa.data.models.User;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Draft;
 import com.cutanddry.qa.functions.Login;
-import com.cutanddry.qa.functions.Orders;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -28,7 +27,7 @@ public class VerifyTheDraftsTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
-        Login.navigateToWhiteLabelPortal(DP);
+        Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToDrafts();
         softAssert.assertTrue(Draft.isUserNavigatedToDrafts(),"navigation error");
         softAssert.assertAll();

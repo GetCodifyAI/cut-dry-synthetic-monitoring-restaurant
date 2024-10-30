@@ -121,4 +121,13 @@ public class Dashboard {
     public static void navigateToUsers(){
         dashboardPage.clickOnUsers();
     }
+    public static void navigateToRewards() {
+        dashboardPage.clickOnRewards();
+    }
+    public static void navigateToSupplier() {
+        dashboardPage.clickOnSuppliers();
+    }
+    public static void navigateToApprovals() {
+        dashboardPage.clickOnApprovals();
+    }
 }

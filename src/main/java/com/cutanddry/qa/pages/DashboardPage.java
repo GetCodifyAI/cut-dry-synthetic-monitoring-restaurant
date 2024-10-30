@@ -6,7 +6,7 @@ public class DashboardPage extends LoginPage{
     By txt_dashboard = By.xpath("//li[contains(text(),'Dashboard')]");
     By btn_customers = By.xpath("//a[@data-tip='Customers']");
     By btn_boost = By.xpath("//a[@data-tip='Boost']");
-    By btn_chat = By.xpath("//a[@data-tip='Chat']");
+    By btn_chat = By.xpath("//a[contains(translate(@data-tip, 'CHAT', 'chat'), 'chat')]");
     By txt_dashboard_restaurant = By.xpath("//div[text()='Place Order']");
     By btn_restaurant_chat = By.xpath("//div[contains(text(),'Chat')]");
     By btn_catalog = By.xpath("//a[@data-tip='View Catalog']");
@@ -16,7 +16,7 @@ public class DashboardPage extends LoginPage{
     By btn_users = By.xpath("//a[@data-tip='Team']");
     By txt_home = By.xpath("//li[contains(text(),'Home')]");
     By btn_orderDesk = By.xpath("//a[contains(text(),'Order Desk')]");
-    By btn_viewOrders = By.xpath("//a[contains(text(),'Order')]");
+    By btn_placeOrders = By.xpath("//a[@data-tip='Place Order']");
     By txt_all = By.xpath("//div[text()='All']");
     By txt_lastDays = By.xpath("(//div[text()='Last 30 Days'])[1]");
     By lbl_salespersonDropdown = By.xpath("(//div[contains(@class, 'css-1uccc91-singleValue')])[1]");
@@ -38,13 +38,16 @@ public class DashboardPage extends LoginPage{
     By btn_reports  =By.xpath("//a[@data-tip='Reports']");
     By btn_restaurantSettings = By.xpath("//div[@arrowprops]//a[text()='Restaurant']");
     By btn_profSettings = By.xpath("//div[@arrowprops]//a[text()='Profile']");
-    By btn_accountSettings = By.xpath("//div[@arrowprops]//a[text()='Account']");
+    By btn_accountSettings = By.xpath("//div[@arrowprops]//a[text()='Accounting']");
     By btn_locationSettings = By.xpath("//div[@arrowprops]//a[text()='Locations']");
     By btn_support = By.xpath("//a[@data-tip='Support']");
     By btn_tracker  =By.xpath("//a[@data-tip='Tracker']");
     By btn_endlAisle  =By.xpath("//a[@data-tip='Endless Aisle']");
     By btn_creditReq  =By.xpath("//a[@data-tip='Credit Requests']");
     By btn_showcase = By.xpath("//a[contains(@data-tip,'Cut+Dry Product Showcase')]");
+    By btn_rewards  =By.xpath("//a[@data-tip='Rewards']");
+    By btn_approvals  =By.xpath("//a[@data-tip='Approvals']");
+    By btn_suppliers  =By.xpath("//a[@data-tip='View Suppliers']");
 
     public boolean isDashboardTextDisplayed(){
         try {
@@ -102,7 +105,7 @@ public class DashboardPage extends LoginPage{
         distributorUI.click(btn_users);
     }
     public void clickOnOrders() throws InterruptedException {
-        distributorUI.click(btn_viewOrders);
+        distributorUI.click(btn_placeOrders);
         distributorUI.waitForCustom(1000);
     }
     public void clickOnOrderDesk(){
@@ -237,5 +240,14 @@ public class DashboardPage extends LoginPage{
     }
     public void clickOnShowCase(){
         distributorUI.click(btn_showcase);
+    }
+    public void clickOnRewards(){
+        distributorUI.click(btn_rewards);
+    }
+    public void clickOnSuppliers(){
+        distributorUI.click(btn_suppliers);
+    }
+    public void clickOnApprovals(){
+        distributorUI.click(btn_approvals);
     }
 }
