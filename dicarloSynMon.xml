@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Southwest Traders (1st Treat Yogurt) Tanya Olsen- 30785489 -Owner - 1st Treat Yogurt Classic" />
+        <parameter name="DP" value="Dicarlo(alfredopizzeria) Dennis- 238822705 -Owner - Drifters Kitchen and Bar WL" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerCatalogTest" />
