@@ -30,7 +30,7 @@ public class VerifyCustomerCatalogTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.goToCatalog();
         softAssert.assertTrue(Customer.isNavigatedToCatalog(),"catalog navigation error");
         softAssert.assertAll();

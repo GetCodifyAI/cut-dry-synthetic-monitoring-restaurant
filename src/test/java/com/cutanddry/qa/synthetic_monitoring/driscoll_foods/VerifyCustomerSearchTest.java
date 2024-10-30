@@ -31,7 +31,7 @@ public class VerifyCustomerSearchTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.searchItemOnOrderGuide(itemCode);
         softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(itemCode),"item mismatch");
         softAssert.assertAll();

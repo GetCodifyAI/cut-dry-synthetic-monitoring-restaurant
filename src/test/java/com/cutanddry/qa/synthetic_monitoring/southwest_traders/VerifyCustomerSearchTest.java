@@ -15,8 +15,9 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerSearchTest extends TestBase {
     static User user;
-    static String DP = "176705437";
+    static String DP = "30785489";
     static String itemCode = "580213";
+    static String DPName= "Southwest Traders";
 
     @BeforeMethod
     public void setUp(){
@@ -31,7 +32,8 @@ public class VerifyCustomerSearchTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
+        Orders.navigateToOrderGuide(DPName);
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.searchItemOnOrderGuide(itemCode);
         softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(itemCode),"item mismatch");
         softAssert.assertAll();

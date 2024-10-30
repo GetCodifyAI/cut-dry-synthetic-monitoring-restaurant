@@ -16,7 +16,7 @@ public class DashboardPage extends LoginPage{
     By btn_users = By.xpath("//a[@data-tip='Team']");
     By txt_home = By.xpath("//li[contains(text(),'Home')]");
     By btn_orderDesk = By.xpath("//a[contains(text(),'Order Desk')]");
-    By btn_viewOrders = By.xpath("//a[contains(text(),'Order')]");
+    By btn_placeOrders = By.xpath("//a[@data-tip='Place Order']");
     By txt_all = By.xpath("//div[text()='All']");
     By txt_lastDays = By.xpath("(//div[text()='Last 30 Days'])[1]");
     By lbl_salespersonDropdown = By.xpath("(//div[contains(@class, 'css-1uccc91-singleValue')])[1]");
@@ -102,7 +102,7 @@ public class DashboardPage extends LoginPage{
         distributorUI.click(btn_users);
     }
     public void clickOnOrders() throws InterruptedException {
-        distributorUI.click(btn_viewOrders);
+        distributorUI.click(btn_placeOrders);
         distributorUI.waitForCustom(1000);
     }
     public void clickOnOrderDesk(){

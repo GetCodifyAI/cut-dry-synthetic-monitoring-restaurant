@@ -30,7 +30,7 @@ public class VerifyCustomerEditTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.goToEdit();
         softAssert.assertTrue(Customer.isEditOrderGuideTextDisplayed(),"edit navigation error");
         softAssert.assertAll();

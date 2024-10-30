@@ -15,7 +15,8 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerEditTest extends TestBase {
     static User user;
-    static String DP = "176705437";
+    static String DP = "30785489";
+    static String DPName= "Southwest Traders";
 
     @BeforeMethod
     public void setUp(){
@@ -30,7 +31,8 @@ public class VerifyCustomerEditTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrder(),"navigation error");
+        Orders.navigateToOrderGuide(DPName);
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.goToEdit();
         softAssert.assertTrue(Customer.isEditOrderGuideTextDisplayed(),"edit navigation error");
         softAssert.assertAll();
