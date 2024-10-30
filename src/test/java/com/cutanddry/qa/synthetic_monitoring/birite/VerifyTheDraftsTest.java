@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyTheDraftsTest extends TestBase {
     static User user;
-    static String DP = "155947343 -";
+    static String DP = "Chef Scott Koranda";
 
     @BeforeMethod
     public void setUp(){
