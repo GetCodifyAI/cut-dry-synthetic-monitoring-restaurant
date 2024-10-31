@@ -26,8 +26,10 @@
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Orders.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Pay.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Reports.java
+/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Rewards.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Settings.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/ShowCase.java
+/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Suppliers.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Support.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Track.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/functions/Tracker.java
@@ -49,8 +51,10 @@
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/OrdersPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/PayPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/ReportsPage.java
+/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/RewardsPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/SettingsPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/ShowCasePage.java
+/Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/SuppliersPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/SupportPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/TrackPage.java
 /Users/senuriranatunga/Workspace/cut-dry-synthetic-monitoring-restaurant/src/main/java/com/cutanddry/qa/pages/TrackerPage.java
