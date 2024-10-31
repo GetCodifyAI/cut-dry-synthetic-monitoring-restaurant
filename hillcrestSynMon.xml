@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Hillcrest(1330 Hospitality) Zeek- 177931291 - Owner - 1330 Hospitality WL" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheUsersTest" />
+        </classes>
+    </test>
+</suite>
