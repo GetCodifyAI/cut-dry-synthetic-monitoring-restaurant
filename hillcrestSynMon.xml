@@ -19,6 +19,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheHistoryTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyThePaySectionTest" />
         </classes>
     </test>
 </suite>

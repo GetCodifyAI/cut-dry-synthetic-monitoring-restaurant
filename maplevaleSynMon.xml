@@ -19,6 +19,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyTheHistoryTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyThePaySectionTest" />
         </classes>
     </test>
 </suite>

@@ -15,8 +15,8 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerSearchTest extends TestBase {
     static User user;
-    static String DP = "238822705";
-    static String itemCode = "12282";
+    static String DP = "141346027";
+    static String itemCode = "6810";
 
     @BeforeMethod
     public void setUp(){
