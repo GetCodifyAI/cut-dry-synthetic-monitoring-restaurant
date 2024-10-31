@@ -10,5 +10,6 @@
         <suite-file path="southwestSynMon.xml" />
         <suite-file path="biriteSynMon.xml" />
         <suite-file path="dicarloSynMon.xml" />
+        <suite-file path="wcwSynMon.xml" />
     </suite-files>
 </suite>
