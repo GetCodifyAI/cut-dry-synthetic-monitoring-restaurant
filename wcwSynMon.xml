@@ -8,17 +8,17 @@
     <test name="synthetic monitoring tests">
         <parameter name="DP" value="What chef Want(110 Reserve Bar) CHEF GLENDA- 211953812 -Manager - 110 Reserve Bar WL" />
         <classes>
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerOrderGuideTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerCatalogTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerEditTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyCustomerSearchTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheDraftsTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheChatTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifySettingsRestaurantTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifySettingsLocationTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheHistoryTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.VerifyTheUsersTest" />
         </classes>
     </test>
 </suite>
