@@ -8,7 +8,7 @@
     <suite-files>
         <suite-file path="driscollSynMon.xml" />
         <suite-file path="southwestSynMon.xml" />
-<!--        <suite-file path="dicarloSynMon.xml" />-->
         <suite-file path="biriteSynMon.xml" />
+        <suite-file path="dicarloSynMon.xml" />
     </suite-files>
 </suite>
