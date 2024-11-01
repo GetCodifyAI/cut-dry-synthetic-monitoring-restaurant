@@ -12,5 +12,6 @@
         <suite-file path="dicarloSynMon.xml" />
         <suite-file path="wcwSynMon.xml" />
         <suite-file path="hillcrestSynMon.xml" />
+        <suite-file path="maplevaleSynMon.xml" />
     </suite-files>
 </suite>
