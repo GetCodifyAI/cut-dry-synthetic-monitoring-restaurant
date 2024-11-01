@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Hillcrest(1330 Hospitality) Zeek- 177931291 - Owner - 1330 Hospitality WL" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyThePaySectionTest" />
+        </classes>
+    </test>
+</suite>

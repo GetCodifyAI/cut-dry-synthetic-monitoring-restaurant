@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Maplevale(1922 Coffee And Brew Co) Shannon - 141346027 - Owner - 1992 Coffee And Brew Co WL" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.VerifyThePaySectionTest" />
+        </classes>
+    </test>
+</suite>
