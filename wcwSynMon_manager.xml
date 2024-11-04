@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="What chef Want - Operator Name: 110 Reserve Bar, Manager: glensouth77@gmail.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.manager.VerifyTheUsersTest" />
+        </classes>
+    </test>
+</suite>

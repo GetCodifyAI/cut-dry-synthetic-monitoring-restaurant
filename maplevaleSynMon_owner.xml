@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Maplevale(1922 Coffee And Brew Co) Shannon - 141346027 - Owner - 1992 Coffee And Brew Co WL" />
+        <parameter name="DP" value="Maplevale - Operator Name: 1922 Coffee And Brew Co, Owner: shannonlove5@hotmail.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifyCustomerCatalogTest" />

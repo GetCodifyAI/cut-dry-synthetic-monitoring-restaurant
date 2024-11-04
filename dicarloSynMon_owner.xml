@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Dicarlo(alfredopizzeria) Dennis- 238822705 -Owner - Drifters Kitchen and Bar WL" />
+        <parameter name="DP" value="Dicarlo - Operator Name: Drifters Kitchen and Bar, Owner: alfredospizzeriarestaurant@gmail.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifyCustomerCatalogTest" />

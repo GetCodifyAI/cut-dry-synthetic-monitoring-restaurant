@@ -12,7 +12,7 @@
         <suite-file path="southwestSynMon_owner.xml" />
         <suite-file path="biriteSynMon_owner.xml" />
         <suite-file path="dicarloSynMon_owner.xml" />
-        <suite-file path="wcwSynMon_owner.xml" />
+        <suite-file path="wcwSynMon_manager.xml" />
         <suite-file path="hillcrestSynMon_owner.xml" />
         <suite-file path="maplevaleSynMon_owner.xml" />
     </suite-files>
