@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Driscoll Foods - Operator Name: Ralph C. Mahar, Owner: kbressani@rcmahar.org" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner.VerifyTheUsersTest" />
+        </classes>
+    </test>
+</suite>

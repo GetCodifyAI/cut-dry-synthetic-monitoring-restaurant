@@ -1,11 +1,10 @@
-package com.cutanddry.qa.synthetic_monitoring.driscoll_foods;
+package com.cutanddry.qa.synthetic_monitoring.driscoll_foods.owner;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
-import com.cutanddry.qa.functions.Customer;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Login;
-import com.cutanddry.qa.functions.Orders;
+import com.cutanddry.qa.functions.Users;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -13,10 +12,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class VerifyCustomerSearchTest extends TestBase {
+public class VerifyTheUsersTest extends TestBase {
     static User user;
-    static String DP = "176705437";
-    static String itemCode = "580213";
+    static String DP = "kbressani@rcmahar.org";
 
     @BeforeMethod
     public void setUp(){
@@ -25,15 +23,13 @@ public class VerifyCustomerSearchTest extends TestBase {
     }
 
     @Test
-    public void VerifyCustomerSearch() throws InterruptedException {
+    public void VerifyTheUsers() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
-        Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
-        Customer.searchItemOnOrderGuide(itemCode);
-        softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(itemCode),"item mismatch");
+        Dashboard.navigateToUsers();
+        softAssert.assertTrue(Users.isUserNavigatedToUsers(),"navigation error");
         softAssert.assertAll();
     }
 

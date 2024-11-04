@@ -6,7 +6,7 @@
         <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>
     </listeners>
     <suite-files>
-        <suite-file path="driscollSynMon.xml" />
+        <suite-file path="driscoll_ownerSynMon.xml" />
         <suite-file path="southwestSynMon.xml" />
         <suite-file path="biriteSynMon.xml" />
         <suite-file path="dicarloSynMon.xml" />
