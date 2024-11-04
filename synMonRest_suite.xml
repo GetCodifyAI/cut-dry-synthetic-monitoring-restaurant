@@ -9,11 +9,11 @@
         <suite-file path="driscoll_ownerSynMon.xml" />
         <suite-file path="driscoll_managerSynMon.xml" />
         <suite-file path="driscoll_employeeSynMon.xml" />
-<!--        <suite-file path="southwestSynMon.xml" />-->
-<!--        <suite-file path="biriteSynMon.xml" />-->
-<!--        <suite-file path="dicarloSynMon.xml" />-->
-<!--        <suite-file path="wcwSynMon.xml" />-->
-<!--        <suite-file path="hillcrestSynMon.xml" />-->
-<!--        <suite-file path="maplevaleSynMon.xml" />-->
+        <suite-file path="southwestSynMon.xml" />
+        <suite-file path="biriteSynMon.xml" />
+        <suite-file path="dicarloSynMon.xml" />
+        <suite-file path="wcwSynMon.xml" />
+        <suite-file path="hillcrestSynMon.xml" />
+        <suite-file path="maplevaleSynMon.xml" />
     </suite-files>
 </suite>
