@@ -8,23 +8,23 @@
     <test name="synthetic monitoring tests">
         <parameter name="DP" value="Southwest Traders (1st Treat Yogurt) Tanya Olsen- 30785489 -Owner - 1st Treat Yogurt Classic" />
         <classes>
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyCustomerOrderGuideTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyCustomerCatalogTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyCustomerEditTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyCustomerSearchTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheDraftsTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheChatTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifySettingsRestaurantTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifySettingsLocationTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifySettingsAccountingTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyThePaySectionTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheHistoryTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheUsersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheReportsTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheSuppliersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheSupportTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.VerifyTheRewardsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsAccountingTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheReportsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheSuppliersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheSupportTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheRewardsTest" />
         </classes>
     </test>
 </suite>

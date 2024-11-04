@@ -8,18 +8,18 @@
     <test name="synthetic monitoring tests">
         <parameter name="DP" value="Hillcrest(1330 Hospitality) Zeek- 177931291 - Owner - 1330 Hospitality WL" />
         <classes>
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerOrderGuideTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerCatalogTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerEditTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyCustomerSearchTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheDraftsTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheChatTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsRestaurantTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifySettingsLocationTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheHistoryTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyTheUsersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyThePaySectionTest" />
         </classes>
     </test>
 </suite>
