@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Driscoll Foods - Operator Name: Ralph C. Mahar, Manager: : tammywoodard@orange-elem.org" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.manager.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.manager.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.manager.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.driscoll_foods.manager.VerifyCustomerSearchTest" />
+        </classes>
+    </test>
+</suite>

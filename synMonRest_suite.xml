@@ -7,6 +7,8 @@
     </listeners>
     <suite-files>
         <suite-file path="driscoll_ownerSynMon.xml" />
+        <suite-file path="driscoll_managerSynMon.xml" />
+        <suite-file path="driscoll_employeeSynMon.xml" />
         <suite-file path="southwestSynMon.xml" />
         <suite-file path="biriteSynMon.xml" />
         <suite-file path="dicarloSynMon.xml" />
