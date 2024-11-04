@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Hillcrest(1330 Hospitality) Zeek- 177931291 - Owner - 1330 Hospitality WL" />
+        <parameter name="DP" value="Hillcrest - Operator Name: 1330 Hospitality, Owner: 1330cle@gmail.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyCustomerCatalogTest" />

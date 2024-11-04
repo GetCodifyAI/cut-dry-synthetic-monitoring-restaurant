@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Birite(1 Hotel San Francisco) Chef Scott koranda- 155947343 -Owner -1 Hotel San Francisco Classic" />
+        <parameter name="DP" value="Birite - Operator Name: 1 Hotel San Francisco, Owner: scott.koranda@1hotels.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyCustomerCatalogTest" />
