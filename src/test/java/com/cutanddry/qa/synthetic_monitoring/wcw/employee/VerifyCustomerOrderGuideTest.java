@@ -1,4 +1,4 @@
-package com.cutanddry.qa.synthetic_monitoring.wcw.manager;
+package com.cutanddry.qa.synthetic_monitoring.wcw.employee;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerOrderGuideTest extends TestBase {
     static User user;
-    static String DP = "union240slc@msn.com";
+    static String DP = "polympia@whatchefswant";
 
     @BeforeMethod
     public void setUp(){

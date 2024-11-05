@@ -1,10 +1,10 @@
-package com.cutanddry.qa.synthetic_monitoring.wcw.manager;
+package com.cutanddry.qa.synthetic_monitoring.wcw.owner;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
 import com.cutanddry.qa.functions.Dashboard;
-import com.cutanddry.qa.functions.Draft;
 import com.cutanddry.qa.functions.Login;
+import com.cutanddry.qa.functions.Settings;
 import com.cutanddry.qa.utils.JsonUtil;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -12,9 +12,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class VerifyTheDraftsTest extends TestBase {
+public class VerifySettingsRestaurantTest extends TestBase {
     static User user;
-    static String DP = "glensouth77@gmail.com";
+    static String DP = "michael_coughlin";
 
     @BeforeMethod
     public void setUp(){
@@ -23,13 +23,13 @@ public class VerifyTheDraftsTest extends TestBase {
     }
 
     @Test
-    public void VerifyTheDrafts() throws InterruptedException {
+    public void VerifySettingsRestaurant() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
-        Dashboard.navigateToDrafts();
-        softAssert.assertTrue(Draft.isUserNavigatedToDrafts(),"navigation error");
+        Dashboard.navigateToRestaurantSettings();
+        softAssert.assertTrue(Settings.isRestaurantSettingsTextDisplayed(),"navigation to restaurant settings error");
         softAssert.assertAll();
     }
 
