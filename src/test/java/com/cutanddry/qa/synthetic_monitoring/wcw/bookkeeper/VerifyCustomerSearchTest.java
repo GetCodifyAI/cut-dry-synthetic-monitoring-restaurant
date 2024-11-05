@@ -1,7 +1,8 @@
-package com.cutanddry.qa.synthetic_monitoring.wcw.manager;
+package com.cutanddry.qa.synthetic_monitoring.wcw.bookkeeper;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
+import com.cutanddry.qa.functions.Customer;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Login;
 import com.cutanddry.qa.functions.Orders;
@@ -12,9 +13,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class VerifyCustomerOrderGuideTest extends TestBase {
+public class VerifyCustomerSearchTest extends TestBase {
     static User user;
-    static String DP = "union240slc@msn.com";
+    static String DP = "240unioninfo@gmail";
+    static String itemCode = "34294";
 
     @BeforeMethod
     public void setUp(){
@@ -23,15 +25,16 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
     }
 
     @Test
-    public void VerifyCustomerOrderGuide() throws InterruptedException {
+    public void VerifyCustomerSearch() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
         Login.logIntoRestaurantProd(user.getEmailOrMobile(), user.getPassword());
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
+        Customer.searchItemOnOrderGuide(itemCode);
+        softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(itemCode),"item mismatch");
         softAssert.assertAll();
-
     }
 
     @AfterMethod
