@@ -28,6 +28,8 @@
         <suite-file path="hillcrestSynMon_employee.xml" />
         <suite-file path="hillcrestSynMon_bookkeeper.xml" />
         <suite-file path="maplevaleSynMon_owner.xml" />
-
+        <suite-file path="maplevaleSynMon_manager.xml" />
+        <suite-file path="maplevaleSynMon_employee.xml" />
+        <suite-file path="maplevaleSynMon_bookkeeper.xml" />
     </suite-files>
 </suite>
