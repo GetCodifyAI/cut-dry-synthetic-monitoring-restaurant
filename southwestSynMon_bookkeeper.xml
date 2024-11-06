@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Southwest Traders - Operator Name: Bacio Di Latte - Newport Beach, Book Keeper: bacio@paperchase.ac" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.bookkeeper.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.bookkeeper.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.bookkeeper.VerifyCustomerSearchTest" />
+        </classes>
+    </test>
+</suite>

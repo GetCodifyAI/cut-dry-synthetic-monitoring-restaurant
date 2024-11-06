@@ -11,6 +11,8 @@
         <suite-file path="driscoll_employeeSynMon.xml" />
         <suite-file path="driscoll_bookkeeperSynMon.xml" />
         <suite-file path="southwestSynMon_owner.xml" />
+        <suite-file path="southwestSynMon_employee.xml" />
+        <suite-file path="southwestSynMon_bookkeeper.xml" />
         <suite-file path="biriteSynMon_owner.xml" />
         <suite-file path="biriteSynMon_manager.xml" />
         <suite-file path="biriteSynMon_employee.xml" />
