@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Birite - Operator Name: 1 Hotel San Francisco, Owner: behruz.moeinimanesh@1hotels.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyCustomerSearchTest" />
+        </classes>
+    </test>
+</suite>
