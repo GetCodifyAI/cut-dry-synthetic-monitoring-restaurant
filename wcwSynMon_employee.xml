@@ -6,12 +6,11 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="What chef Want - Operator Name: 240 Union Restaurant, Manager: polympia@whatchefswant.com" />
+        <parameter name="DP" value="What chef Want - Operator Name: 240 Union Restaurant, Employee: polympia@whatchefswant.com" />
         <classes>
-            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyCustomerOrderGuideTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyCustomerCatalogTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyCustomerEditTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.employee.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.employee.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.employee.VerifyCustomerSearchTest" />
         </classes>
     </test>
 </suite>
