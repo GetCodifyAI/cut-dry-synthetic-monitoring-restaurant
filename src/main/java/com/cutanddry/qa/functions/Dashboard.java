@@ -2,6 +2,8 @@ package com.cutanddry.qa.functions;
 
 import com.cutanddry.qa.pages.DashboardPage;
 
+import static com.cutanddry.qa.functions.Customer.customersPage;
+
 public class Dashboard {
     static DashboardPage dashboardPage = new DashboardPage();
 
@@ -41,6 +43,9 @@ public class Dashboard {
         dashboardPage.clickOnUsers();
     }
     public static void navigateToOrders() throws InterruptedException {
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
         dashboardPage.clickOnOrders();
     }
     public static void navigateToOrderDesk(){

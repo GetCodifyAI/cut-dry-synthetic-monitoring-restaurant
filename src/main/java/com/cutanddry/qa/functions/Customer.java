@@ -21,15 +21,15 @@ public class Customer {
         }
     }
     public static void increaseFirstRowQtyByOne() throws InterruptedException {
-//        if (customersPage.isPreviousDraftOrderNoDisplayed()){
-//            customersPage.clickPreviousDraftOrderNo();
-//        }
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
         customersPage.clickPlusQryFirstRow();
     }
     public static void increaseFirstRowQtyCustom(int count) throws InterruptedException {
-//        if (customersPage.isPreviousDraftOrderNoDisplayed()){
-//            customersPage.clickPreviousDraftOrderNo();
-//        }
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
         for (int i=0; i<count;i++){
             customersPage.clickPlusQryFirstRow();
         }
@@ -38,9 +38,9 @@ public class Customer {
         customersPage.clickMinusQryFirstRow();
     }
     public static void increaseFirstRowQtyByThree() throws InterruptedException {
-//        if (customersPage.isPreviousDraftOrderNoDisplayed()){
-//            customersPage.clickPreviousDraftOrderNo();
-//        }
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
         customersPage.clickPlusQryFirstRow();
         customersPage.clickPlusQryFirstRow();
         customersPage.clickPlusQryFirstRow();
@@ -66,9 +66,9 @@ public class Customer {
         customersPage.clickOnCheckoutButton();
     }
     public static void goToCatalog() throws InterruptedException {
-//        if (customersPage.isPreviousDraftOrderNoDisplayed()){
-//            customersPage.clickPreviousDraftOrderNo();
-//        }
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
         customersPage.clickOnCatalogButton();
     }
     public static void searchItemOnCatalog(String item) throws InterruptedException {
