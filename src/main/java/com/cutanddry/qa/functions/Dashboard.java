@@ -43,10 +43,10 @@ public class Dashboard {
         dashboardPage.clickOnUsers();
     }
     public static void navigateToOrders() throws InterruptedException {
+        dashboardPage.clickOnOrders();
         if (customersPage.isPreviousDraftOrderNoDisplayed()){
             customersPage.clickPreviousDraftOrderNo();
         }
-        dashboardPage.clickOnOrders();
     }
     public static void navigateToOrderDesk(){
         dashboardPage.clickOnOrderDesk();
