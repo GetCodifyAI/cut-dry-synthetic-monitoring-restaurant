@@ -193,6 +193,9 @@ public class Customer {
         customersPage.clickOnDownloadOrderGuide();
     }
     public static void searchItemOnOrderGuide(String item) throws InterruptedException {
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
         customersPage.typeToSearchOnOrderGuide(item);
     }
     public static void goToCreatePopup() throws InterruptedException {
