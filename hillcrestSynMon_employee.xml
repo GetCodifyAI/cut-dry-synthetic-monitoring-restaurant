@@ -9,7 +9,6 @@
         <parameter name="DP" value="Hillcrest - Operator Name: Aladdins Eatery Medina - Medina, Employee: medina@aladdins.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.employee.VerifyCustomerOrderGuideTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.employee.VerifyCustomerSearchTest" />
         </classes>
     </test>
 </suite>

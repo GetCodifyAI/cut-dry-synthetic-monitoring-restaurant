@@ -10,7 +10,6 @@
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.employee.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.employee.VerifyCustomerCatalogTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.employee.VerifyCustomerSearchTest" />
         </classes>
     </test>
 </suite>

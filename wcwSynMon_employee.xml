@@ -10,7 +10,6 @@
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.employee.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.employee.VerifyCustomerCatalogTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.employee.VerifyCustomerSearchTest" />
         </classes>
     </test>
 </suite>

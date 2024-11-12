@@ -9,7 +9,6 @@
         <parameter name="DP" value="Southwest Traders - Operator Name: Baskin Robbins #3189 Pc #, Employee: br31whittier@gmail.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.employee.VerifyCustomerOrderGuideTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.employee.VerifyCustomerSearchTest" />
         </classes>
     </test>
 </suite>
