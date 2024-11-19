@@ -1,6 +1,7 @@
 package com.cutanddry.qa.functions;
 
 import com.cutanddry.qa.pages.OrdersPage;
+import org.testng.SkipException;
 
 import static com.cutanddry.qa.functions.Customer.customersPage;
 
@@ -12,8 +13,14 @@ public class Orders {
     }
     public static void navigateToOrderGuide(String name) throws InterruptedException {
         ordersPage.clickOnPlaceOrder(name);
+        if (ordersPage.isEditExistingOrderDisplayed()) {
+            testAbort();
+        }
         if (customersPage.isPreviousDraftOrderNoDisplayed()){
             customersPage.clickPreviousDraftOrderNo();
        }
+    }
+    public static void testAbort() {
+        throw new SkipException("Test skipped");
     }
 }
