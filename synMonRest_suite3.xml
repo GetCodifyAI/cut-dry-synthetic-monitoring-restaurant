@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>
+        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>
+        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="maplevaleSynMon_owner.xml" />
+        <suite-file path="maplevaleSynMon_manager.xml" />
+        <suite-file path="maplevaleSynMon_employee.xml" />
+        <suite-file path="maplevaleSynMon_bookkeeper.xml" />
+        <suite-file path="driscoll_ownerSynMon.xml" />
+        <suite-file path="driscoll_managerSynMon.xml" />
+        <suite-file path="driscoll_employeeSynMon.xml" />
+        <suite-file path="driscoll_bookkeeperSynMon.xml" />
+    </suite-files>
+</suite>
