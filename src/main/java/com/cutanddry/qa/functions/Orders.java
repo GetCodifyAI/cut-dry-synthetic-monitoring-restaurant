@@ -14,13 +14,10 @@ public class Orders {
     public static void navigateToOrderGuide(String name) throws InterruptedException {
         ordersPage.clickOnPlaceOrder(name);
         if (ordersPage.isEditExistingOrderDisplayed()) {
-            testAbort();
+            OrdersPage.testAbort();
         }
         if (customersPage.isPreviousDraftOrderNoDisplayed()){
             customersPage.clickPreviousDraftOrderNo();
        }
-    }
-    public static void testAbort() {
-        throw new SkipException("Test skipped");
     }
 }

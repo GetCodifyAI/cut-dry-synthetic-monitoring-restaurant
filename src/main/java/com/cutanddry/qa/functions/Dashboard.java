@@ -1,11 +1,13 @@
 package com.cutanddry.qa.functions;
 
 import com.cutanddry.qa.pages.DashboardPage;
+import com.cutanddry.qa.pages.OrdersPage;
 
 import static com.cutanddry.qa.functions.Customer.customersPage;
 
 public class Dashboard {
     static DashboardPage dashboardPage = new DashboardPage();
+    static OrdersPage ordersPage = new OrdersPage();
 
     public static boolean isUserNavigatedToDashboard(){
         return dashboardPage.isDashboardTextDisplayed();
@@ -44,6 +46,9 @@ public class Dashboard {
     }
     public static void navigateToOrders() throws InterruptedException {
         dashboardPage.clickOnOrders();
+        if (ordersPage.isEditExistingOrderDisplayed()) {
+            OrdersPage.testAbort();
+        }
         if (customersPage.isPreviousDraftOrderNoDisplayed()){
             customersPage.clickPreviousDraftOrderNo();
         }

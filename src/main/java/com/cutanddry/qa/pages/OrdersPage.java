@@ -1,6 +1,7 @@
 package com.cutanddry.qa.pages;
 
 import org.openqa.selenium.By;
+import org.testng.SkipException;
 
 public class OrdersPage extends LoginPage{
     By txt_orders = By.xpath("//div[contains(text(),'Order Guide')]");
@@ -21,5 +22,8 @@ public class OrdersPage extends LoginPage{
     }
     public boolean isEditExistingOrderDisplayed() {
         return distributorUI.isDisplayed(txt_editOrder);
+    }
+    public static void testAbort() {
+        throw new SkipException("Test skipped");
     }
 }
