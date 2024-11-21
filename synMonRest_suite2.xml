@@ -9,11 +9,9 @@
         <suite-file path="southwestSynMon_owner.xml" />
         <suite-file path="southwestSynMon_employee.xml" />
         <suite-file path="southwestSynMon_bookkeeper.xml" />
-        <suite-file path="biriteSynMon_owner.xml" />
-        <suite-file path="biriteSynMon_manager.xml" />
-        <suite-file path="biriteSynMon_employee.xml" />
-        <suite-file path="biriteSynMon_bookkeeper.xml" />
-        <suite-file path="dicarloSynMon_owner.xml" />
-        <suite-file path="dicarloSynMon_employee.xml" />
+        <suite-file path="driscoll_ownerSynMon.xml" />
+        <suite-file path="driscoll_managerSynMon.xml" />
+        <suite-file path="driscoll_employeeSynMon.xml" />
+        <suite-file path="driscoll_bookkeeperSynMon.xml" />
     </suite-files>
 </suite>
