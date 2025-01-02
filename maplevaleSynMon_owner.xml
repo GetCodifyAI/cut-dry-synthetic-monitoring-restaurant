@@ -15,7 +15,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifySettingsBusinessTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifyTheHistoryTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.maplevale.owner.VerifyTheUsersTest" />

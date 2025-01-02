@@ -107,8 +107,8 @@ public class Dashboard {
     public static void navigateToLocationSettings() {
         dashboardPage.clickOnLocationSettings();
     }
-    public static void navigateToRestaurantSettings() {
-        dashboardPage.clickOnRestaurantSettings();
+    public static void navigateToBusinessSettings() {
+        dashboardPage.clickOnBusinessSettings();
     }
     public static void navigateToProfileSettings() {
         dashboardPage.clickOnProfileSettings();

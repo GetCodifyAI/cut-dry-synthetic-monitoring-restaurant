@@ -15,7 +15,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsBusinessTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheHistoryTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.hillcrest.owner.VerifyTheUsersTest" />

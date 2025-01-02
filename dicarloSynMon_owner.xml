@@ -15,7 +15,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifySettingsBusinessTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifyTheHistoryTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.dicarlo.owner.VerifyTheUsersTest" />

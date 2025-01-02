@@ -15,7 +15,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifySettingsBusinessTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyTheHistoryTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.wcw.owner.VerifyTheUsersTest" />

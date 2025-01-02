@@ -36,7 +36,7 @@ public class DashboardPage extends LoginPage{
     By btn_trackNotifications = By.xpath("//div[@arrowprops]//a[text()='Notifications']");
     By btn_pay  =By.xpath("//a[@data-tip='View Invoices']");
     By btn_reports  =By.xpath("//a[@data-tip='Reports']");
-    By btn_restaurantSettings = By.xpath("//div[@arrowprops]//a[text()='Restaurant']");
+    By btn_businessSettings = By.xpath("//div[@arrowprops]//a[text()='Business']");
     By btn_profSettings = By.xpath("//div[@arrowprops]//a[text()='Profile']");
     By btn_accountSettings = By.xpath("//div[@arrowprops]//a[text()='Accounting']");
     By btn_locationSettings = By.xpath("//div[@arrowprops]//a[text()='Locations']");
@@ -213,11 +213,11 @@ public class DashboardPage extends LoginPage{
         distributorUI.hoverOverElement(btn_accountSettings);
         distributorUI.click(btn_accountSettings);
     }
-    public void clickOnRestaurantSettings(){
+    public void clickOnBusinessSettings(){
         distributorUI.scrollToElement(btn_settings);
         distributorUI.clickUsingJavaScript(btn_settings);
-        distributorUI.hoverOverElement(btn_restaurantSettings);
-        distributorUI.click(btn_restaurantSettings);
+        distributorUI.hoverOverElement(btn_businessSettings);
+        distributorUI.click(btn_businessSettings);
     }
     public void clickOnProfileSettings(){
         distributorUI.scrollToElement(btn_settings);

@@ -15,7 +15,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifySettingsBusinessTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifySettingsAccountingTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyThePaySectionTest" />

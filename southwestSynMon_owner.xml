@@ -15,7 +15,7 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheDraftsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheChatTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsProfileTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsRestaurantTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsBusinessTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsLocationTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifySettingsAccountingTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyThePaySectionTest" />
