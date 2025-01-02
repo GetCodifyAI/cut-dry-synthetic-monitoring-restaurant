@@ -36,7 +36,7 @@ public class DashboardPage extends LoginPage{
     By btn_trackNotifications = By.xpath("//div[@arrowprops]//a[text()='Notifications']");
     By btn_pay  =By.xpath("//a[@data-tip='View Invoices']");
     By btn_reports  =By.xpath("//a[@data-tip='Reports']");
-    By btn_restaurantSettings = By.xpath("//div[@arrowprops]//a[text()='Restaurant']");
+    By btn_restaurantSettings = By.xpath("//div[@arrowprops]//a[text()='Business']");
     By btn_profSettings = By.xpath("//div[@arrowprops]//a[text()='Profile']");
     By btn_accountSettings = By.xpath("//div[@arrowprops]//a[text()='Accounting']");
     By btn_locationSettings = By.xpath("//div[@arrowprops]//a[text()='Locations']");
