@@ -159,21 +159,23 @@ workflows:
   build-and-test:
     jobs:
       - build-and-test-1
-      - build-and-test-2
-      - build-and-test-3
-      - build-and-test-4
+      #- build-and-test-2
+      #- build-and-test-3
+      #- build-and-test-4
 
   scheduled-test:
     triggers:
       - schedule:
-          cron: "0 4,10,16,22 * * *"  # This will run build-and-test every 6 hours
+          #cron: "0 4,10,16,22 * * *"  # This will run build-and-test every 6 hours
+          cron: "2 17 * * *"
           filters:
             branches:
               only:
-                - main
+                #- main
+                - stackNotificationTest
     jobs:
       - build-and-test-1
-      - build-and-test-2
-      - build-and-test-3
-      - build-and-test-4
+      #- build-and-test-2
+      #- build-and-test-3
+      #- build-and-test-4
 
