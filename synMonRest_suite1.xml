@@ -8,11 +8,11 @@
     <suite-files>
         <suite-file path="wcwSynMon_owner.xml" />
         <suite-file path="wcwSynMon_manager.xml" />
-<!--        <suite-file path="wcwSynMon_employee.xml" />-->
-<!--        <suite-file path="wcwSynMon_bookkeeper.xml" />-->
-<!--        <suite-file path="hillcrestSynMon_owner.xml" />-->
-<!--        <suite-file path="hillcrestSynMon_manager.xml" />-->
-<!--        <suite-file path="hillcrestSynMon_employee.xml" />-->
-<!--        <suite-file path="hillcrestSynMon_bookkeeper.xml" />-->
+        <suite-file path="wcwSynMon_employee.xml" />
+        <suite-file path="wcwSynMon_bookkeeper.xml" />
+        <suite-file path="hillcrestSynMon_owner.xml" />
+        <suite-file path="hillcrestSynMon_manager.xml" />
+        <suite-file path="hillcrestSynMon_employee.xml" />
+        <suite-file path="hillcrestSynMon_bookkeeper.xml" />
     </suite-files>
 </suite>
