@@ -167,7 +167,7 @@ workflows:
     triggers:
       - schedule:
           #cron: "0 4,10,16,22 * * *"  # This will run build-and-test every 6 hours
-          cron: "2 17 * * *"
+          cron: "58 1 * * *"
           filters:
             branches:
               only:
