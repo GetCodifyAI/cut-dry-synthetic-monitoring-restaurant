@@ -190,7 +190,7 @@ public class CustomersPage extends LoginPage {
     String txt_catalogItem ="(//div[contains(text(), 'NAME')])[last()]";
     By txt_namePDP = By.xpath("//div[contains(@class, 'd-flex align-items-center mont') and contains(@class, '_1wrelxt') and contains(@class, '_1vlidrf')]");
     By lbl_orders = By.xpath("//li[contains(text(),'Orders')]");
-    By txt_allItems = By.xpath("//div[text()='All Items']");
+    By txt_allItems = By.xpath("(//div[contains(text(), 'Category')]/ancestor::div[2]/following-sibling::div//div[contains(text(), 'All Items')])[1]");
     By txt_priceZero = By.xpath("//tbody//span[contains(text(), '$0.00')]");
 
     public boolean isPreviousDraftOrderNoDisplayed() throws InterruptedException {
