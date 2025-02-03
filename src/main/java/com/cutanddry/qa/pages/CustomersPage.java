@@ -37,6 +37,7 @@ public class CustomersPage extends LoginPage {
     By btn_print = By.xpath("//button[contains(text(), 'Print')]");
     By lbl_printFriendlyOrderGuide = By.xpath("//h5[contains(text(), 'Print-Friendly Order Guide')]");
     By btn_downloadOrderGuide = By.xpath("//button[contains(text(), 'Download Order Guide')]");
+    By lbl_itemCodeList = By.xpath("(//td//span//div[@data-tip='View Product Details']/ancestor::tr/td[2])[1]");
     By tbx_orderGuideSearch = By.xpath("//input[@placeholder='Search order guide...']");
     By btn_create = By.xpath("//button[contains(text(), 'Create')]");
     By tbx_OrderGuideName = By.xpath("//input[@placeholder='Enter Name']");
@@ -361,6 +362,11 @@ public class CustomersPage extends LoginPage {
     public void clickOnDownloadOrderGuide(){
         distributorUI.waitForClickability(btn_downloadOrderGuide);
         distributorUI.click(btn_downloadOrderGuide);
+    }
+    public String getItemCodeFirstRow() throws InterruptedException {
+        distributorUI.waitForVisibility(lbl_itemCodeList);
+        distributorUI.waitForCustom(3000);
+        return distributorUI.getText(lbl_itemCodeList);
     }
     public void typeToSearchOnOrderGuide(String item) throws InterruptedException {
         distributorUI.clear(tbx_orderGuideSearch);

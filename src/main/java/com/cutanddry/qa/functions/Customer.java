@@ -192,6 +192,9 @@ public class Customer {
     public static void printOrderGuide(){
         customersPage.clickOnDownloadOrderGuide();
     }
+    public static String getItemCodeFirstRow() throws InterruptedException {
+        return customersPage.getItemCodeFirstRow();
+    }
     public static void searchItemOnOrderGuide(String item) throws InterruptedException {
 //        if (customersPage.isPreviousDraftOrderNoDisplayed()){
 //            customersPage.clickPreviousDraftOrderNo();
