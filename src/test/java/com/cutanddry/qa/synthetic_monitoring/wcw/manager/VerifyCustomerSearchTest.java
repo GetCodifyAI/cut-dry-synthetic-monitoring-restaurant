@@ -17,6 +17,7 @@ public class VerifyCustomerSearchTest extends TestBase {
     static User user;
     static String DP = "union240slc@msn.com";
     static String itemCode = "2033016";
+    static String searchItemCode;
 
     @BeforeMethod
     public void setUp(){
@@ -32,8 +33,9 @@ public class VerifyCustomerSearchTest extends TestBase {
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
-        Customer.searchItemOnOrderGuide(itemCode);
-        softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(itemCode),"item mismatch");
+        searchItemCode = Customer.getItemCodeFirstRow();
+        Customer.searchItemOnOrderGuide(searchItemCode);
+        softAssert.assertTrue(Customer.getItemDetailsFirstRow().contains(searchItemCode),"item mismatch");
         softAssert.assertAll();
     }
 
