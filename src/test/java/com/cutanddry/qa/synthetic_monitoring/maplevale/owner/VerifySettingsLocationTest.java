@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifySettingsLocationTest extends TestBase {
     static User user;
-    static String DP = "141346027";
+    static String DP = "284169765"; // 141346027
 
     @BeforeMethod
     public void setUp(){
