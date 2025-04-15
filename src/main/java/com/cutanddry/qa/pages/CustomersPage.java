@@ -12,7 +12,7 @@ public class CustomersPage extends LoginPage {
     By btn_increaseQtySecondRow = By.xpath("//tr[2]/td[8]/div/div/div/div[3]");
     By btn_decreaseQtySecondRow = By.xpath("//tr[2]/td[8]/div/div/div/div[1]");
     By btn_checkout = By.xpath("//button[text()='$']/../button[2]");
-    By btn_catalog = By.xpath("//div[text()='Catalog']");
+    By btn_catalog = By.xpath("//span[text()='Catalog']");
     By tbx_catalogSearch = By.xpath("//input[@placeholder='Search catalog...']");
     String lbl_catalogSearchItemList = "//div[contains(@class, '_3quvq7') and contains(text(),'NAME')]";
     String btn_addToCart = "//div[contains(@class, '_13kb1gk')]//div[text()= 'ITEMNAME']//ancestor::div[contains(@class, '_13kb1gk')]//div[@class='_btf6h0']//button[contains(@class, 'btn-outline-primary')]";
