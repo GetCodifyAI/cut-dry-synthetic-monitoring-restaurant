@@ -11,6 +11,9 @@ public class Orders {
     public static boolean isUserNavigatedToOrderGuide(){
         return ordersPage.isOrderGuideTextDisplayed();
     }
+    public static boolean isUserNavigatedToOrderGuideSpecialCase(){
+        return ordersPage.isOrderGuideTextDisplayedSpecialCase();
+    }
     public static void navigateToOrderGuide(String name) throws InterruptedException {
         ordersPage.clickOnPlaceOrder(name);
         if (ordersPage.isEditExistingOrderDisplayed()) {

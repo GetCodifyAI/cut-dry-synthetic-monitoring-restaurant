@@ -5,6 +5,7 @@ import org.testng.SkipException;
 
 public class OrdersPage extends LoginPage{
     By txt_orders = By.xpath("//span[contains(text(),'Order Guide')]");
+    By txt_orders_sub = By.xpath("//div[contains(text(),'Order Guide')]");
     String btn_placeOrder = "//div[contains(text(), 'NAME')]";
     By txt_editOrder = By.xpath("//h2[contains(text(),'Edit Existing Order')]");
 
@@ -15,6 +16,15 @@ public class OrdersPage extends LoginPage{
             return false;
         }
         return distributorUI.isDisplayed(txt_orders);
+    }
+
+    public boolean isOrderGuideTextDisplayedSpecialCase(){
+        try {
+            distributorUI.waitForVisibility(txt_orders_sub);
+        } catch (Exception e){
+            return false;
+        }
+        return distributorUI.isDisplayed(txt_orders_sub);
     }
 
     public void clickOnPlaceOrder(String name) {

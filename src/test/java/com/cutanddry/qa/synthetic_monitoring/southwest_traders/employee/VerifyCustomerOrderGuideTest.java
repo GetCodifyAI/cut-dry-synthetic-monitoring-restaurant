@@ -31,7 +31,7 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
         Orders.navigateToOrderGuide(DPName);
-        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuideSpecialCase(),"navigation error");
         softAssert.assertAll();
 
     }

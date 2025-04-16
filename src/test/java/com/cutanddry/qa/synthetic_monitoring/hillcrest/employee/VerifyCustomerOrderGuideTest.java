@@ -29,7 +29,7 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLoginAsPortal(DP);
         Dashboard.navigateToOrders();
-        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
+        softAssert.assertTrue(Orders.isUserNavigatedToOrderGuideSpecialCase(),"navigation error");
         softAssert.assertAll();
 
     }
