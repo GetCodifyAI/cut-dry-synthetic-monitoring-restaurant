@@ -65,7 +65,8 @@ public class CustomersPage extends LoginPage {
     By section_moreFromThisBrand = By.xpath("//div[contains(text(), 'More From')]");
     By btn_companyDropdown = By.xpath("//button[.//span[text()='Company:']]");
     By txt_companyDropdownText = By.xpath("//a[contains(text(), 'Independent Foods Co')]");
-    By btn_edit = By.xpath("//button[contains(text(), 'Edit')]");
+//    By btn_edit = By.xpath("//button[contains(text(), 'Edit')]");
+By btn_edit = By.xpath("//a[contains(., 'Edit')]");
     By txt_editOrderGuide= By.xpath("//span[contains(text(), 'Edit Order Guide')]");
     By btn_moreOptions = By.xpath("//span[contains(text(), 'More Options')]");
     By btn_exportOrderGuide = By.xpath("//a[contains(text(), 'Export Order Guide (XLSX)')]");

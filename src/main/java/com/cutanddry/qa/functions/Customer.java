@@ -244,6 +244,7 @@ public class Customer {
         return customersPage.isCompanyDropdownTextDisplayed();
     }
     public static void goToEdit(){
+        customersPage.clickOnMoreOptions();
         customersPage.clickOnEdit();
     }
     public static boolean isEditOrderGuideTextDisplayed(){
