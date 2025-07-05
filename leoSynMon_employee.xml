@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Leo Leo - Operator Name: Avila Lighthouse Suites (18118) - Avila Beach, Employee: ashleyh@avilalighthousesuites.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.employee.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.employee.VerifyCustomerCatalogTest" />
+        </classes>
+    </test>
+</suite>

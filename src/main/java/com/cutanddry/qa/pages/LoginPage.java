@@ -121,4 +121,21 @@ public class LoginPage extends TestBase {
         distributorUI.waitForVisibility(btn_logout);
         distributorUI.navigateToURL(distributorUI.getText(btn_logout, "href"));
     }
+    public void navigateToLipariRestaurantProd() {
+        distributorUI.navigateToURL(Constants.LIPARI_URL);
+    }
+    public void navigateToLipariPortal(String name) {
+        distributorUI.navigateToURL(Constants.PROD_LIPARI_LOGIN_AS);
+        distributorUI.sendKeys(lbl_loginAs,name);
+        distributorUI.isDisplayed(By.xpath(txt_whitelblCustomer.replace("NAME", name)));
+        distributorUI.click(By.xpath(txt_whitelblCustomer.replace("NAME", name)));
+        distributorUI.navigateToURL(distributorUI.getText(btn_loginAsWLApp, "href"));
+    }
+    public void navigateToLipariDistributorPortalProd(String name) {
+        distributorUI.navigateToURL(Constants.PROD_LIPARI_LOGIN_AS);
+        distributorUI.waitForElementEnabledState(lbl_loginAsDist,true);
+        distributorUI.sendKeys(lbl_loginAsDist,name);
+        distributorUI.click(By.xpath(txt_distributor.replace("NAME", name)));
+        distributorUI.navigateToURL(distributorUI.getText(btn_loginAsDis, "href"));
+    }
 }

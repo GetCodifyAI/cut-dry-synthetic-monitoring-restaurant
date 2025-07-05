@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Leo Leo - Operator Name: Avila Lighthouse Suites (18118) - Avila Beach, Owner: luism@avilalighthousesuites.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifySettingsBusinessTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifySettingsLocationTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifySettingsAccountingTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheUsersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheReportsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheSuppliersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheSupportTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheRewardsTest" />
+        </classes>
+    </test>
+</suite>

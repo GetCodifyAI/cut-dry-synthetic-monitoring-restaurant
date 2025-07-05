@@ -14,6 +14,8 @@ public class Constants {
     public static String SLACK_WEBHOOK = System.getenv("SLACK_WEBHOOK");
     public static String CONFIG_SUPPLIER = "https://app-uat.staging.cutanddry.com/internaltools/configure-supplier";
     public static String PROD_LOGIN_AS = "https://internal.cutanddry.com/internaltools/loginas";
+    public static String LIPARI_URL = "https://app-lipari.cutanddry.com/";
+    public static String PROD_LIPARI_LOGIN_AS = "https://app-lipari.cutanddry.com/internaltools/loginas";
 
     //  https://hooks.slack.com/services/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 //group - synthetic-mon-alerts
 

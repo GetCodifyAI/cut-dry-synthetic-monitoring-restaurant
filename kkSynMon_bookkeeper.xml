@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="KK International, Inc - Operator Name: Aiko (15777) - Houston, Book Keeper: clintonshort@gmail.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.kk.bookkeeper.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.kk.bookkeeper.VerifyCustomerCatalogTest" />
+        </classes>
+    </test>
+</suite>

@@ -32,7 +32,7 @@ jobs:
             sudo apt-get install -y google-chrome-stable
             google-chrome --version
       - run:
-          name: Build and run tests
+          name: Build and run tests 1
           command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite1.xml -Drun.headless=true -Dtest.env=prod
       - store_artifacts:
           path: target/surefire-reports
@@ -70,7 +70,7 @@ jobs:
             sudo apt-get install -y google-chrome-stable
             google-chrome --version
       - run:
-          name: Build and run tests
+          name: Build and run tests 2
           command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite2.xml -Drun.headless=true -Dtest.env=prod
       - store_artifacts:
           path: target/surefire-reports
@@ -108,7 +108,7 @@ jobs:
             sudo apt-get install -y google-chrome-stable
             google-chrome --version
       - run:
-          name: Build and run tests
+          name: Build and run tests 3
           command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite3.xml -Drun.headless=true -Dtest.env=prod
       - store_artifacts:
           path: target/surefire-reports
@@ -146,8 +146,122 @@ jobs:
             sudo apt-get install -y google-chrome-stable
             google-chrome --version
       - run:
-          name: Build and run tests
+          name: Build and run tests 4
           command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite4.xml -Drun.headless=true -Dtest.env=prod
+      - store_artifacts:
+          path: target/surefire-reports
+          destination: build-and-test-artifacts
+    executor:
+
+  build-and-test-5:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Install Java 22
+          command: |
+            sudo apt-get update && sudo apt-get install -y wget
+            wget https://download.java.net/java/GA/jdk22/830ec9fcccef480bb3e73fb7ecafe059/36/GPL/openjdk-22_linux-x64_bin.tar.gz
+            sudo mkdir -p /usr/lib/jvm
+            sudo tar zxvf openjdk-22_linux-x64_bin.tar.gz -C /usr/lib/jvm
+            sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-22/bin/java 2200
+            sudo update-alternatives --config java
+            echo 'export PATH="/usr/lib/jvm/jdk-22/bin:$PATH"' >> $BASH_ENV
+            source $BASH_ENV
+            java -version
+      - run:
+          name: Install Maven
+          command: |
+            sudo apt-get install -y maven
+            mvn -version
+      - run:
+          name: Install Chrome
+          command: |
+            wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+            sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+            sudo apt-get update
+            sudo apt-get install -y google-chrome-stable
+            google-chrome --version
+      - run:
+          name: Build and run tests 5
+          command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite5.xml -Drun.headless=true -Dtest.env=prod
+      - store_artifacts:
+          path: target/surefire-reports
+          destination: build-and-test-artifacts
+    executor:
+
+  build-and-test-6:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Install Java 22
+          command: |
+            sudo apt-get update && sudo apt-get install -y wget
+            wget https://download.java.net/java/GA/jdk22/830ec9fcccef480bb3e73fb7ecafe059/36/GPL/openjdk-22_linux-x64_bin.tar.gz
+            sudo mkdir -p /usr/lib/jvm
+            sudo tar zxvf openjdk-22_linux-x64_bin.tar.gz -C /usr/lib/jvm
+            sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-22/bin/java 2200
+            sudo update-alternatives --config java
+            echo 'export PATH="/usr/lib/jvm/jdk-22/bin:$PATH"' >> $BASH_ENV
+            source $BASH_ENV
+            java -version
+      - run:
+          name: Install Maven
+          command: |
+            sudo apt-get install -y maven
+            mvn -version
+      - run:
+          name: Install Chrome
+          command: |
+            wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+            sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+            sudo apt-get update
+            sudo apt-get install -y google-chrome-stable
+            google-chrome --version
+      - run:
+          name: Build and run tests 6
+          command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite6.xml -Drun.headless=true -Dtest.env=prod
+      - store_artifacts:
+          path: target/surefire-reports
+          destination: build-and-test-artifacts
+    executor:
+
+  build-and-test-7:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Install Java 22
+          command: |
+            sudo apt-get update && sudo apt-get install -y wget
+            wget https://download.java.net/java/GA/jdk22/830ec9fcccef480bb3e73fb7ecafe059/36/GPL/openjdk-22_linux-x64_bin.tar.gz
+            sudo mkdir -p /usr/lib/jvm
+            sudo tar zxvf openjdk-22_linux-x64_bin.tar.gz -C /usr/lib/jvm
+            sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-22/bin/java 2200
+            sudo update-alternatives --config java
+            echo 'export PATH="/usr/lib/jvm/jdk-22/bin:$PATH"' >> $BASH_ENV
+            source $BASH_ENV
+            java -version
+      - run:
+          name: Install Maven
+          command: |
+            sudo apt-get install -y maven
+            mvn -version
+      - run:
+          name: Install Chrome
+          command: |
+            wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+            sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+            sudo apt-get update
+            sudo apt-get install -y google-chrome-stable
+            google-chrome --version
+      - run:
+          name: Build and run tests 7
+          command: mvn clean test -Dsurefire.suiteXmlFiles=synMonRest_suite7.xml -Drun.headless=true -Dtest.env=prod
       - store_artifacts:
           path: target/surefire-reports
           destination: build-and-test-artifacts
@@ -162,6 +276,9 @@ workflows:
       - build-and-test-2
       - build-and-test-3
       - build-and-test-4
+      - build-and-test-5
+      - build-and-test-6
+      - build-and-test-7
 
   scheduled-test:
     triggers:
@@ -176,4 +293,7 @@ workflows:
       - build-and-test-2
       - build-and-test-3
       - build-and-test-4
+      - build-and-test-5
+      - build-and-test-6
+      - build-and-test-7
 

@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Wagner - Operator Name: 29th Street Tavern (680) - Baltimore, Owner: erinroach83@gmail.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyCustomerCatalogTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyCustomerEditTest" />-->
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifySettingsBusinessTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifySettingsLocationTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifySettingsAccountingTest" />-->
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheUsersTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheReportsTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheSuppliersTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheSupportTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.owner.VerifyTheRewardsTest" />-->
+        </classes>
+    </test>
+</suite>

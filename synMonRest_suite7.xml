@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>
+        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>
+        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="chefsKitchenSynMon_owner.xml" />
+        <suite-file path="chefsKitchenSynMon_manager.xml" />
+        <suite-file path="creamCoSynMon_owner.xml" />
+        <suite-file path="creamCoSynMon_bookkeeper.xml" />
+        <suite-file path="wagnerSynMon_owner.xml" />
+        <suite-file path="wagnerSynMon_bookkeeper.xml" />
+    </suite-files>
+</suite>

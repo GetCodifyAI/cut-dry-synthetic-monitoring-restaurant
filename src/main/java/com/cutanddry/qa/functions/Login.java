@@ -71,4 +71,16 @@ public class Login {
     public static void clickLogout(){
         loginPage.clickLogout();
     }
+    public static void logIntoLipariRestaurantProd(String emailOrMobile, String password){
+        loginPage.navigateToLipariRestaurantProd();
+        loginPage.typeEmailOrMobile(emailOrMobile);
+        loginPage.typePassword(password);
+        loginPage.clickSubmit();
+    }
+    public static void navigateToLipariPortal(String name) {
+        loginPage.navigateToLipariPortal(name);
+    }
+    public static void navigateToLipariDistributorPortalProd(String name) {
+        loginPage.navigateToLipariDistributorPortalProd(name);
+    }
 }

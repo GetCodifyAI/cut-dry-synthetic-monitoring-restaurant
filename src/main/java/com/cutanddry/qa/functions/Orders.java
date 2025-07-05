@@ -15,6 +15,9 @@ public class Orders {
         return ordersPage.isOrderGuideTextDisplayedSpecialCase();
     }
     public static void navigateToOrderGuide(String name) throws InterruptedException {
+        if (ordersPage.isPurchaseHistoryPopupDisplayed()) {
+            ordersPage.clickOnPurchaseHistoryPopupClose();
+        }
         ordersPage.clickOnPlaceOrder(name);
         if (ordersPage.isEditExistingOrderDisplayed()) {
             OrdersPage.testAbort();

@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Cream Co - Operator Name: Monks Kettle-terra Linda-San Rafael, Owner: raiden@monkskettle.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifySettingsBusinessTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifySettingsLocationTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifySettingsAccountingTest" />-->
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheUsersTest" />
+            <!--<class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheReportsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheSuppliersTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheSupportTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.cream_co.owner.VerifyTheRewardsTest" />-->
+        </classes>
+    </test>
+</suite>

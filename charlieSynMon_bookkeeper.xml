@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Charlie’s Seattle - Operator Name: Haggen Meridian Herb (13711) - BELLINGHAM, Book Keeper: s3430c40@haggen.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.bookkeeper.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.bookkeeper.VerifyCustomerCatalogTest" />
+        </classes>
+    </test>
+</suite>

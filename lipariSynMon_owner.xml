@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Lipari - Operator Name: Nino's Clinton - Deli (87730001) - CLINTON TWP, Owner: anna_geller@liparifoods.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyCustomerCatalogTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyCustomerEditTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifySettingsBusinessTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifySettingsLocationTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifySettingsAccountingTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyThePaySectionTest" />-->
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheUsersTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheReportsTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheSuppliersTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheSupportTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.lipari.owner.VerifyTheRewardsTest" />-->
+        </classes>
+    </test>
+</suite>

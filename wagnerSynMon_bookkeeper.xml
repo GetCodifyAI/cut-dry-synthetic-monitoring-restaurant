@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Wagner - Operator Name: Macky's Bayside (50497) - Ocean City , Book Keeper: kdavis@mackys.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.bookkeeper.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.wagner.bookkeeper.VerifyCustomerCatalogTest" />
+        </classes>
+    </test>
+</suite>

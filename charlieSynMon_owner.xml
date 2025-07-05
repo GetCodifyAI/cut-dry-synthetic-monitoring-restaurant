@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bvt suit" parallel="tests" thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.RetryTransformer"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.TestNGListener"/>-->
+<!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
+<!--    </listeners>-->
+    <test name="synthetic monitoring tests">
+        <parameter name="DP" value="Charlie’s Seattle - Operator Name: T and C Lakemont - Deli (12217) - BELLEVUE, Owner: patricemckinnon@tc-markets.com" />
+        <classes>
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyCustomerOrderGuideTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyCustomerCatalogTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyCustomerEditTest" />-->
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyCustomerSearchTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheDraftsTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheChatTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifySettingsProfileTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifySettingsBusinessTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifySettingsLocationTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifySettingsAccountingTest" />-->
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyThePaySectionTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheHistoryTest" />
+            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheUsersTest" />
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheReportsTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheSuppliersTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheSupportTest" />-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyTheRewardsTest" />-->
+        </classes>
+    </test>
+</suite>

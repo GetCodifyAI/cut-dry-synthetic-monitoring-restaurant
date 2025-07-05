@@ -12,6 +12,7 @@ import java.io.IOException;
 public class JsonUtil {
     private static final ObjectMapper objectMapper = new ObjectMapper();
     private static final String USER_LOGIN_JSON_PATH = "src/main/resources/userlogin.json";
+    private static final String LIPARI_USER_LOGIN_JSON_PATH = "src/main/resources/userloginlipari.json";
     private static final String FORGOT_PASSWORD_USER_LOGIN_JSON_PATH = "src/main/resources/forgotpassworduserlogin.json";
     private static final String BROADCAST_URL_JSON_PATH = "src/main/resources/broadcast_url.json";
     private static final String CASH_AND_CARRY_APP_USER_LOGIN_JSON_PATH = "src/main/resources/cashandcarryapp.json";
@@ -28,6 +29,9 @@ public class JsonUtil {
 
     public static User readUserLogin() {
         return readJson(USER_LOGIN_JSON_PATH, User.class);
+    }
+    public static User readLipariUserLogin() {
+        return readJson(LIPARI_USER_LOGIN_JSON_PATH, User.class);
     }
     public static ForgotPasswordUser readForgotPasswordUserLogin() {
         return readJson(FORGOT_PASSWORD_USER_LOGIN_JSON_PATH, ForgotPasswordUser.class);
