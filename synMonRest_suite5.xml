@@ -10,7 +10,8 @@
         <suite-file path="charlieSynMon_manager.xml" />
         <suite-file path="charlieSynMon_employee.xml" />
         <suite-file path="charlieSynMon_bookkeeper.xml" />
-        <suite-file path="lipariSynMon_owner.xml" />
-        <suite-file path="lipariSynMon_employee.xml" />
+        <!--        TODO: Uncomment the Lipari suite files when authorization is fixed-->
+<!--        <suite-file path="lipariSynMon_owner.xml" />-->
+<!--        <suite-file path="lipariSynMon_employee.xml" />-->
     </suite-files>
 </suite>
