@@ -14,6 +14,7 @@ public class CustomersPage extends LoginPage {
     By btn_checkout = By.xpath("//button[text()='$']/../button[2]");
     By btn_catalog = By.xpath("//span[text()='Catalog']");
     By tbx_catalogSearch = By.xpath("//input[@placeholder='Search catalog...']");
+    By btn_OGAndCatalogSearch = By.xpath("//div//*[name()='svg' and contains(@data-icon, 'cdSearch')]");
     String lbl_catalogSearchItemList = "//div[contains(@class, '_3quvq7') and contains(text(),'NAME')]";
     String btn_addToCart = "//div[contains(@class, '_13kb1gk')]//div[text()= 'ITEMNAME']//ancestor::div[contains(@class, '_13kb1gk')]//div[@class='_btf6h0']//button[contains(@class, 'btn-outline-primary')]";
     By tbx_itemQuantityFirstRow = By.xpath("//tr[1]//td[8]//input");
@@ -259,6 +260,7 @@ By btn_edit = By.xpath("//a[contains(., 'Edit')]");
         distributorUI.clear(tbx_catalogSearch);
         distributorUI.waitForCustom(1000);
         distributorUI.sendKeys(tbx_catalogSearch,item);
+        distributorUI.click(btn_OGAndCatalogSearch);
         distributorUI.waitForCustom(5000);
     }
     public String getFirstItemNameFrmSearchResults(String name){
@@ -373,6 +375,7 @@ By btn_edit = By.xpath("//a[contains(., 'Edit')]");
         distributorUI.clear(tbx_orderGuideSearch);
         distributorUI.waitForCustom(1000);
         distributorUI.sendKeys(tbx_orderGuideSearch,item);
+        distributorUI.click(btn_OGAndCatalogSearch);
         distributorUI.waitForCustom(4000);
     }
     public void clickOnCreate() throws InterruptedException {
@@ -384,6 +387,7 @@ By btn_edit = By.xpath("//a[contains(., 'Edit')]");
         distributorUI.clear(tbx_orderGuideSearch);
         distributorUI.waitForCustom(2000);
         distributorUI.sendKeys(tbx_OrderGuideName,orderGuideName);
+        distributorUI.click(btn_OGAndCatalogSearch);
     }
     public void clickSubmitOrderGuide(){
         distributorUI.waitForClickability(btn_submitOrderGuide);

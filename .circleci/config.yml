@@ -283,7 +283,7 @@ workflows:
   scheduled-test:
     triggers:
       - schedule:
-          cron: "0 4,10,16,22 * * *"  # This will run build-and-test every 6 hours
+          cron: "30 21,5 * * *"  # This will run build-and-test every 6 hours 0 4,10,16,22 * * *
           filters:
             branches:
               only:
