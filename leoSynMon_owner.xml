@@ -23,7 +23,8 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheUsersTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheReportsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheSuppliersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheSupportTest" />
+            <!--            TODO: Support section has been removed from the side navigation bar-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheSupportTest" />-->
             <class name="com.cutanddry.qa.synthetic_monitoring.leo.owner.VerifyTheRewardsTest" />
         </classes>
     </test>

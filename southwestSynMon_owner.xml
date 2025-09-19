@@ -23,7 +23,8 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheUsersTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheReportsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheSuppliersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheSupportTest" />
+            <!--            TODO: Support section has been removed from the side navigation bar-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheSupportTest" />-->
             <class name="com.cutanddry.qa.synthetic_monitoring.southwest_traders.owner.VerifyTheRewardsTest" />
         </classes>
     </test>

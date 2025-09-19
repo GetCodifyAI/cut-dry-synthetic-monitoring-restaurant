@@ -23,7 +23,8 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.kk.owner.VerifyTheUsersTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.kk.owner.VerifyTheReportsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.kk.owner.VerifyTheSuppliersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.kk.owner.VerifyTheSupportTest" />
+            <!--            TODO: Support section has been removed from the side navigation bar-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.kk.owner.VerifyTheSupportTest" />-->
             <class name="com.cutanddry.qa.synthetic_monitoring.kk.owner.VerifyTheRewardsTest" />
         </classes>
     </test>
