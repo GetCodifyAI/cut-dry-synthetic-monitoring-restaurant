@@ -23,7 +23,8 @@
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheUsersTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheReportsTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheSuppliersTest" />
-            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheSupportTest" />
+            <!--            TODO: Support section has been removed from the side navigation bar-->
+<!--            <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheSupportTest" />-->
             <class name="com.cutanddry.qa.synthetic_monitoring.birite.owner.VerifyTheRewardsTest" />
         </classes>
     </test>
