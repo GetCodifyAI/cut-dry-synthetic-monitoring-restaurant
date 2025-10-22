@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Lipari - Operator Name: Nino's Clinton - Deli (87730001) - CLINTON TWP, Employee: darlene+lipari@cutanddry.com" />
+        <parameter name="DP" value="Lipari - Operator Name: Donna Montgomery (17819000) - WASHINGTON, Employee: donna_montgomery@liparifoods.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.lipari.employee.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.lipari.employee.VerifyCustomerCatalogTest" />
