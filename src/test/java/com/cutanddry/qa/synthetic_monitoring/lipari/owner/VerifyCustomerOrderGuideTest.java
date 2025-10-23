@@ -2,6 +2,7 @@ package com.cutanddry.qa.synthetic_monitoring.lipari.owner;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
+import com.cutanddry.qa.functions.Customer;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Login;
 import com.cutanddry.qa.functions.Orders;
@@ -30,6 +31,7 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
         Login.navigateToLipariPortal(DP);
         Dashboard.navigateToOrders();
 //        Orders.navigateToOrderGuide(DPName);
+        Customer.selectOrderGuideViewFromMoreOptions();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         softAssert.assertAll();
 

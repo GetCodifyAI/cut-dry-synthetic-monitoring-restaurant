@@ -15,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerCatalogTest extends TestBase {
     static User user;
-    static String DP = "1040306106";
+    static String DP = "1041244867";
 
 
     @BeforeMethod
@@ -32,6 +32,7 @@ public class VerifyCustomerCatalogTest extends TestBase {
         Login.navigateToLipariPortal(DP);
         Dashboard.navigateToOrders();
 //        Orders.navigateToOrderGuide(DPName);
+        Customer.selectOrderGuideViewFromMoreOptions();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.goToCatalog();
         softAssert.assertTrue(Customer.isNavigatedToCatalog(),"catalog navigation error");

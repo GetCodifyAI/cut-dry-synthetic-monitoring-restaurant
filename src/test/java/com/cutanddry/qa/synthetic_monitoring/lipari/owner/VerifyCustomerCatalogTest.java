@@ -31,6 +31,7 @@ public class VerifyCustomerCatalogTest extends TestBase {
         Login.navigateToLipariPortal(DP);
         Dashboard.navigateToOrders();
 //        Orders.navigateToOrderGuide(DPName);
+        Customer.selectOrderGuideViewFromMoreOptions();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.goToCatalog();
         softAssert.assertTrue(Customer.isNavigatedToCatalog(),"catalog navigation error");

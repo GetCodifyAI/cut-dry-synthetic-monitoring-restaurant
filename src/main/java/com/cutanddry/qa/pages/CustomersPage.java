@@ -70,6 +70,7 @@ public class CustomersPage extends LoginPage {
 By btn_edit = By.xpath("//a[contains(., 'Edit')]");
     By txt_editOrderGuide= By.xpath("//span[contains(text(), 'Edit Order Guide')]");
     By btn_moreOptions = By.xpath("//span[contains(text(), 'More Options')]");
+    By orderGuideView = By.xpath("//div[contains(text(),'Order Guide View')]");
     By btn_exportOrderGuide = By.xpath("//a[contains(text(), 'Export Order Guide (XLSX)')]");
     By btn_importOrderGuide = By.xpath("//a[contains(text(), 'Import Order Guide (XLSX)')]");
     By btn_uploadToOrder = By.xpath("//a[contains(text(), 'Upload to Order')]");
@@ -498,6 +499,9 @@ By btn_edit = By.xpath("//a[contains(., 'Edit')]");
     public void clickOnMoreOptions(){
         distributorUI.waitForClickability(btn_moreOptions);
         distributorUI.click(btn_moreOptions);
+    }
+    public void clickOnOrderGuideViewOption(){
+        distributorUI.click(orderGuideView);
     }
     public void clickOnExportOrderGuide(){
         distributorUI.waitForClickability(btn_exportOrderGuide);
