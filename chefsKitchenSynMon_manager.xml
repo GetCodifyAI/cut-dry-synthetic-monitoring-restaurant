@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Chef’s kitchen - Operator Name: Cut And Dry - Test Account, Manager: chad794@me.com" />
+        <parameter name="DP" value="Chef’s kitchen - Operator Name: Bjs Market (C1737) - Chicago, Manager: soulfood@bjsmarket.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.chefs_kitchen.manager.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.chefs_kitchen.manager.VerifyCustomerCatalogTest" />
