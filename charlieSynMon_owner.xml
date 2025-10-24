@@ -6,7 +6,7 @@
 <!--        <listener class-name="com.cutanddry.qa.utils.AIOSampleUIMethodListener"/>-->
 <!--    </listeners>-->
     <test name="synthetic monitoring tests">
-        <parameter name="DP" value="Charlie’s Seattle - Operator Name: T and C Lakemont - Deli (12217) - BELLEVUE, Owner: patricemckinnon@tc-markets.com" />
+        <parameter name="DP" value="Charlie’s Seattle - Operator Name: T and C Lakemont - Deli (12217) - BELLEVUE, Owner: amiramirez@tc-markets.com" />
         <classes>
             <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyCustomerOrderGuideTest" />
             <class name="com.cutanddry.qa.synthetic_monitoring.charlie.owner.VerifyCustomerCatalogTest" />

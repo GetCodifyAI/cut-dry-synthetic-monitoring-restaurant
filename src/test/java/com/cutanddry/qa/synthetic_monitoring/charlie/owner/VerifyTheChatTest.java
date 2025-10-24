@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyTheChatTest extends TestBase {
     static User user;
-    static String DP = "patricemckinnon@tc-mar";
+    static String DP = "amiramirez@tc-markets";
 //    static String DPName= "Charlie’s Seattle";
 
     @BeforeMethod
