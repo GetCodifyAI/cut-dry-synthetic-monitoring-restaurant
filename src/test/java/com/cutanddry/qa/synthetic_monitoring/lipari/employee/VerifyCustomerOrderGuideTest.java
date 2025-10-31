@@ -2,6 +2,7 @@ package com.cutanddry.qa.synthetic_monitoring.lipari.employee;
 
 import com.cutanddry.qa.base.TestBase;
 import com.cutanddry.qa.data.models.User;
+import com.cutanddry.qa.functions.Customer;
 import com.cutanddry.qa.functions.Dashboard;
 import com.cutanddry.qa.functions.Login;
 import com.cutanddry.qa.functions.Orders;
@@ -14,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifyCustomerOrderGuideTest extends TestBase {
     static User user;
-    static String DP = "1040306106";
+    static String DP = "1041244867";
 
     @BeforeMethod
     public void setUp(){
@@ -30,6 +31,7 @@ public class VerifyCustomerOrderGuideTest extends TestBase {
         Login.navigateToLipariPortal(DP);
         Dashboard.navigateToOrders();
 //        Orders.navigateToOrderGuide(DPName);
+        Customer.selectOrderGuideViewFromMoreOptions();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         softAssert.assertAll();
 

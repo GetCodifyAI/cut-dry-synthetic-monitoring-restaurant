@@ -11,7 +11,7 @@ public class Constants {
     public static String SEC_URL = secDomain();
     public static String NODE_EXPLORER = "https://app-uat.staging.cutanddry.com/admin";
     public static String BASE_URI = "https://supplier-uat.staging.cutanddry.com/GraphQLController";
-    public static String SLACK_WEBHOOK = System.getenv("SLACK_WEBHOOK");
+    public static String SLACK_WEBHOOK = System.getenv("SLACK_WEBHOOK_SYN_MON");
     public static String CONFIG_SUPPLIER = "https://app-uat.staging.cutanddry.com/internaltools/configure-supplier";
     public static String PROD_LOGIN_AS = "https://internal.cutanddry.com/internaltools/loginas";
     public static String LIPARI_URL = "https://app-lipari.cutanddry.com/";

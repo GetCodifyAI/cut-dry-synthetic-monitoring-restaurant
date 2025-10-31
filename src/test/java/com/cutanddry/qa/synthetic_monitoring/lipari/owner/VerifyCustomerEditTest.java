@@ -31,6 +31,7 @@ public class VerifyCustomerEditTest extends TestBase {
         Login.navigateToLipariPortal(DP);
         Dashboard.navigateToOrders();
 //        Orders.navigateToOrderGuide(DPName);
+        Customer.selectOrderGuideViewFromMoreOptions();
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.goToEdit();
         softAssert.assertTrue(Customer.isEditOrderGuideTextDisplayed(),"edit navigation error");

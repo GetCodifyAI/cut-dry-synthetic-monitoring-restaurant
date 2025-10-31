@@ -634,6 +634,10 @@ public class Customer {
     public static int getCountZeroPriceItemsDisplayed() throws InterruptedException {
         return customersPage.getCountZeroPriceItemsDisplayed();
     }
+    public static void selectOrderGuideViewFromMoreOptions() {
+        customersPage.clickOnMoreOptions();
+        customersPage.clickOnOrderGuideViewOption();
+    }
     public static boolean isAccountHoldPopUpDisplay() throws InterruptedException {
         return customersPage.isAccountHoldPopUpDisplay();
     }

@@ -31,6 +31,7 @@ public class VerifyCustomerSearchTest extends TestBase {
         softAssert.assertTrue(Dashboard.isUserNavigatedToRestaurantDashboard(),"login error");
         Login.navigateToLipariPortal(DP);
         Dashboard.navigateToOrders();
+        Customer.selectOrderGuideViewFromMoreOptions();
 //        Orders.navigateToOrderGuide(DPName);
         softAssert.assertTrue(Orders.isUserNavigatedToOrderGuide(),"navigation error");
         Customer.searchItemOnOrderGuide(itemCode);
