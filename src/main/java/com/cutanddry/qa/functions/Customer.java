@@ -638,4 +638,7 @@ public class Customer {
         customersPage.clickOnMoreOptions();
         customersPage.clickOnOrderGuideViewOption();
     }
+    public static boolean isAccountHoldPopUpDisplay() throws InterruptedException {
+        return customersPage.isAccountHoldPopUpDisplay();
+    }
 }
