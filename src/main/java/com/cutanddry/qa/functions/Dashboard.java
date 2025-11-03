@@ -140,4 +140,10 @@ public class Dashboard {
     public static void navigateToApprovals() {
         dashboardPage.clickOnApprovals();
     }
+    public static void clickCloseHardHoldPopup() throws InterruptedException {
+        customersPage.clickAccHoldCloseIcon();
+        if (customersPage.isPreviousDraftOrderNoDisplayed()){
+            customersPage.clickPreviousDraftOrderNo();
+        }
+    }
 }
