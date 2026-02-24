@@ -196,6 +196,8 @@ By btn_edit = By.xpath("//a[contains(., 'Edit')]");
     By lbl_orders = By.xpath("//li[contains(text(),'Orders')]");
     By txt_allItems = By.xpath("(//div[contains(text(), 'Category')]/ancestor::div[2]/following-sibling::div//div[contains(text(), 'All Items')])[1] | (//div[contains(text(), 'Local Delivery')]/ancestor::div[2]/following-sibling::div//div[contains(text(), 'All Items')])[1]");
     By txt_priceZero = By.xpath("//tbody//span[contains(text(), '$0.00')]");
+    By btn_accHoldClose_ = By.xpath("(//button[contains(@class, 'close')]/span[text()='×'])[last()]");
+    By accountOnHold = By.xpath("//h2[text()='Account on hold!']");
 
     public boolean isPreviousDraftOrderNoDisplayed() throws InterruptedException {
         distributorUI.waitForElementEnabledState(btn_previousDraftOrderNo, true);
@@ -1021,5 +1023,12 @@ By btn_edit = By.xpath("//a[contains(., 'Edit')]");
             return 1;
         }
         return distributorUI.countElements(txt_priceZero);
+    }
+    public void clickAccHoldCloseIcon(){
+        distributorUI.waitForVisibility(btn_accHoldClose_);
+        distributorUI.click(btn_accHoldClose_);
+    }
+    public boolean isAccountHoldPopUpDisplay()throws InterruptedException{
+        return distributorUI.isDisplayed(accountOnHold);
     }
 }

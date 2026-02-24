@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 public class VerifySettingsBusinessTest extends TestBase {
     static User user;
-    static String DP = "amiramirez@tc-markets";
+    static String DP = "496094410";
 
     @BeforeMethod
     public void setUp(){
