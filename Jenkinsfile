@@ -14,9 +14,9 @@ pipeline {
         parallelsAlwaysFailFast()
     }
 
-    triggers {
-        cron('0 0 * * *')  // Runs at 5:30 AM IST (12:00 AM UTC)
-    }
+//     triggers {
+//         cron('0 0 * * *')  // Runs at 5:30 AM IST (12:00 AM UTC)
+//     }
 
     stages {
         stage('Parallel Test Execution') {
